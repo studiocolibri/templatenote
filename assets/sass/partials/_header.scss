@@ -1,0 +1,15 @@
+/*
+* HEADER
+*/
+
+.site-header {
+    @include max-width;
+    padding-top:$su*3;
+    padding-bottom:$su*3;
+}
+
+.site-title {
+
+}
+
+
