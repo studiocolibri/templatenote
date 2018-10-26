@@ -4,12 +4,15 @@
 
 .site-header {
     @include max-width;
-    padding-top:$su*3;
-    padding-bottom:$su*3;
+    border:1px solid $red;
+    padding:$su*5;
+    background-color:$white;
 }
 
 .site-title {
-
+    text-transform: uppercase;
+    @include f-ss;
+    color:$red;
 }
 
 
