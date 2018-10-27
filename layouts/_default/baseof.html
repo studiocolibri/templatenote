@@ -18,7 +18,7 @@
     <meta property="og:description" content='Utiliser des technologies modernes pour construire un web plus rapide, plus sécurisé et plus écologique.'>
     <meta property="og:site_name" content="Studio Colibri"> -->
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="noindex, nofollow">
     {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
     {{ partial "site-favicon.html" . }}
