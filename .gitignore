@@ -2,9 +2,6 @@
 .DS_Store
 Thumbs.db
 
-# hugo public
-/public
-
 # IDEs
 .buildpath
 .project
