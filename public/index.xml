@@ -5,19 +5,18 @@
     <link>https://brave-ride-4d3713.netlify.com/</link>
     <description>Recent content on Template Note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr-be</language>
+    <language>fr</language>
     
 	<atom:link href="https://brave-ride-4d3713.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://brave-ride-4d3713.netlify.com/test/</link>
+      <link>https://brave-ride-4d3713.netlify.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://brave-ride-4d3713.netlify.com/test/</guid>
-      <description>boonnjjoouuuur
-test staging branch</description>
+      <guid>https://brave-ride-4d3713.netlify.com/about/</guid>
+      <description>Contenu de la page about</description>
     </item>
     
     <item>
@@ -26,7 +25,27 @@ test staging branch</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://brave-ride-4d3713.netlify.com/contact/</guid>
-      <description>contact info</description>
+      <description>Contact info</description>
+    </item>
+    
+    <item>
+      <title>Nom du carnet 01</title>
+      <link>https://brave-ride-4d3713.netlify.com/carnet/lien-vers-carnet-01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://brave-ride-4d3713.netlify.com/carnet/lien-vers-carnet-01/</guid>
+      <description>Je suis la description du carnet 01
+test de shortcode :   test de custom shortcode &amp;ldquo;pub&amp;rdquo; : Titre de la pub : Le titre de la pub
+Paramètre de la pub, uniquement si présent : pub--special-class</description>
+    </item>
+    
+    <item>
+      <title>Nom du carnet 02</title>
+      <link>https://brave-ride-4d3713.netlify.com/carnet/lien-vers-carnet-02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://brave-ride-4d3713.netlify.com/carnet/lien-vers-carnet-02/</guid>
+      <description>Je suis la description du carnet 02</description>
     </item>
     
   </channel>

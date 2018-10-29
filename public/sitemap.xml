@@ -7,11 +7,43 @@
   </url>
   
   <url>
-    <loc>https://brave-ride-4d3713.netlify.com/test/</loc>
+    <loc>https://brave-ride-4d3713.netlify.com/carnet/</loc>
+  </url>
+  
+  <url>
+    <loc>https://brave-ride-4d3713.netlify.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://brave-ride-4d3713.netlify.com/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://brave-ride-4d3713.netlify.com/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://brave-ride-4d3713.netlify.com/carnet/lien-vers-carnet-01/</loc>
+  </url>
+  
+  <url>
+    <loc>https://brave-ride-4d3713.netlify.com/carnet/lien-vers-carnet-02/</loc>
+  </url>
+  
+  <url>
+    <loc>https://brave-ride-4d3713.netlify.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://brave-ride-4d3713.netlify.com/tags/testtag/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://brave-ride-4d3713.netlify.com/tags/testtagtwo/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>

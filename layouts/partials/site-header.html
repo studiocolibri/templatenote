@@ -1,6 +1,7 @@
 
 <header class="site-header"> 
     <h3 class="site-title">
-      Template Note
+      <a href="{{ .Site.BaseURL }}">Template Note</a>
     </h3>
+    {{ block "nav" . }}{{ partial "site-navigation.html" .}}{{ end }}
 </header>

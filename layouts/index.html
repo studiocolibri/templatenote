@@ -1,10 +1,31 @@
 {{ define "main" }}
   <section class="block-mw">
-    {{ range .Pages }}
-        <li>
-            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-        </li>
+    <h2>Liste de toutes les pages du site&nbsp;:</h2>
+    {{ range .Pages.GroupBy "Section" }}
+      <h3>{{ .Key }}</h3>
+      <ul>
+          {{ range .Pages }}
+          <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>
+          {{ end }}
+      </ul>
     {{ end }}
-    test 404....
+    <br><br>
+    <h2>Liste uniquement des 5 premiers carnets organisés par titre&nbsp;:</h2>
+    <ul>
+      {{ range first 5 (where .Pages "Section" "carnet").ByTitle }}
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+    <br><br>
+    <h2>Liste des tags du site&nbsp;:</h2>
+    <ul>
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+          <li><a href="/tags/{{ $name | urlize }}">{{ $name }}</a></li>
+        {{ end }}
+    </ul>
   </section>
 {{ end }}

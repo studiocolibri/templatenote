@@ -1,0 +1,35 @@
+{{ define "main" }}
+    <article class="single">
+        <header class="page-header block-mw">
+            <h1>Titre du carnet : {{.Title}}</h1>
+        </header>
+        <section class="page-wrapper block-mw">
+            {{.Content}}
+            <br>
+            <ul>
+                <li>Kind : {{ .Kind }}</li>
+                <li>Type : {{ .Type }}</li>
+                <li>Section : {{ .Page.Section }}</li>
+                <li>Data : {{ .Data }}</li>
+                <li>Hugo : {{ .Hugo }}</li>
+                <li>Language : {{ .Language }}</li>
+                <li>IsHome : {{ .IsHome }}</li>
+                <li>FuzzyWordCount : {{ .FuzzyWordCount }}</li>
+                <li>Prix : {{ .Params.Price }}&nbsp;€</li>
+                <li>Tags :
+                    <ul>
+                        {{ range .Params.Tags }}
+                            <li><a href="/carnet/tags/{{ . | urlize }}">{{ . }}</a> </li>
+                        {{ end }}
+                    </ul>
+                </li>
+            </ul>
+            <br><br>
+            Test de partials :<br>
+            {{ partial "custom/related.html" . }}
+            <br><br>
+            <a href="{{ .Site.BaseURL }}">Retour à la page d'accueil</a>
+        </section>
+        
+    </article>
+{{ end }}

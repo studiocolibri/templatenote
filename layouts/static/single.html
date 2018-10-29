@@ -1,0 +1,13 @@
+{{ define "main" }}
+    <article class="single">
+        <header class="page-header block-mw">
+            <h1>Static : {{.Title}}</h1>
+        </header>
+        <section class="page-wrapper block-mw">
+            {{.Content}}
+            <br>
+            <a href="javascript:window.history.back()">Retour</a>
+        </section>
+        
+    </article>
+{{ end }}

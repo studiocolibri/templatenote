@@ -1,5 +1,10 @@
 baseURL = "https://brave-ride-4d3713.netlify.com/"
-languageCode = "fr-be"
+languageCode = "fr"
+DefaultContentLanguage = "fr"
 title = "Template Note"
+
+[params]
+  author = "Studio Colibri"
+  description = "Un site qui vend des carnets"
 
 disableKinds = ["taxonomy", "taxonomyTerm"]

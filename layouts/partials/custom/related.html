@@ -1,0 +1,9 @@
+{{ $related := .Site.RegularPages.RelatedIndices . "tags" }}
+{{ with $related }}
+<h3>Carnets qui ont le même tag en front matter</h3>
+<ul>
+	{{ range . }}
+	<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+	{{ end }}
+</ul>
+{{ end }}
