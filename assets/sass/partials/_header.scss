@@ -5,7 +5,7 @@
 .site-header {
     @include max-width;
     margin-top:$su*2;
-    margin-bottom:$su*7;
+    margin-bottom:$su*4;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -30,6 +30,10 @@
         max-width:260px;
         text-transform: initial;
     }
+}
+
+.site-nav {
+    margin-left:$su*2;
 }
 
 .site-nav__list {

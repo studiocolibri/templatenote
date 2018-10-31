@@ -24,3 +24,8 @@ body {
     border:15px solid $red;
     background:$white url(../assets/img/templatenote-bg.svg) repeat center center;
 }
+
+.site-wrapper {
+    padding-right:$su;
+    padding-left:$su*2;
+}

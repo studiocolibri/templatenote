@@ -25,14 +25,17 @@
     <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
     {{ partial "site-favicon.html" . }}
     {{- template "_internal/schema.html" . -}}
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
 
   <body>
-    {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
-    <main role="main">
-      {{ block "main" . }}{{ end }}
-    </main>
-    {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
+    <div class="site-wrapper">
+        {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
+        <main role="main">
+          {{ block "main" . }}{{ end }}
+        </main>
+        {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
+    </div>
     {{ block "scripts" . }}{{ partial "site-scripts.html" . }}{{ end }}
   </body>
 </html>

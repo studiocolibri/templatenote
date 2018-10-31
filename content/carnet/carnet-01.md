@@ -1,14 +1,19 @@
 ---
 title: "Nom du carnet 01"
-price : 25
 slug: "lien-vers-carnet-01"
+img: "/assets/img/template-note-about.png"
+price : 25
+color: "bleu"
+size: "12cm x 20cm"
+pages: 50
+paper: "papier recyclé"
+pattern: "rectangle"
+binding: "carton"
+print: "Imprimeur Deluxe sprl"
 tags: [testTag, testTagTwo]
+featured: "oui"
 ---
 
 Je suis la description du carnet 01
 
-test de shortcode :
-{{< youtube 668nUCeBHyY >}}
-<br><br>
-test de custom shortcode "pub" :
-{{< pub title="Le titre de la pub" class="pub--special-class">}}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non faucibus elit, ut malesuada urna. Sed magna orci, finibus in lectus placerat, ornare tincidunt lorem. Curabitur vehicula euismod risus. Phasellus ut odio vitae neque mattis bibendum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Vestibulum mollis eleifend vehicula. Fusce sollicitudin lacinia urna, a porta lacus. Maecenas quis quam quis nisi finibus facilisis sit amet at dolor. Mauris sollicitudin, neque id consectetur tincidunt, nunc ligula convallis ex, vitae egestas nunc libero id tellus. Aenean in ultrices nulla. 

@@ -32,6 +32,11 @@
   </url>
   
   <url>
+    <loc>https://brave-ride-4d3713.netlify.com/static/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://brave-ride-4d3713.netlify.com/tags/</loc>
     <priority>0</priority>
   </url>

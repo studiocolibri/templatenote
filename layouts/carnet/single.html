@@ -1,34 +1,48 @@
 {{ define "main" }}
-    <article class="single">
-        <header class="page-header block-mw">
-            <h1>Titre du carnet : {{.Title}}</h1>
+    <article class="single block-mw rectangle-before">
+        <header class="page-header">
+            <h1>{{.Title}}</h1>
         </header>
-        <section class="page-wrapper block-mw">
-            {{.Content}}
-            <br>
-            <ul>
-                <li>Kind : {{ .Kind }}</li>
-                <li>Type : {{ .Type }}</li>
-                <li>Section : {{ .Page.Section }}</li>
-                <li>Data : {{ .Data }}</li>
-                <li>Hugo : {{ .Hugo }}</li>
-                <li>Language : {{ .Language }}</li>
-                <li>IsHome : {{ .IsHome }}</li>
-                <li>FuzzyWordCount : {{ .FuzzyWordCount }}</li>
-                <li>Prix : {{ .Params.Price }}&nbsp;€</li>
-                <li>Tags :
+        <section class="page-wrapper">
+            <div class="section-blocks">
+                <div class="section-block">
                     <ul>
-                        {{ range .Params.Tags }}
-                            <li><a href="/carnet/tags/{{ . | urlize }}">{{ . }}</a> </li>
-                        {{ end }}
+                        <li>Prix : {{ .Params.Price }}&nbsp;€
+                        <li>Couleur : {{ .Params.Color }}</li>
+                        <li>Format : {{ .Params.Size }}</li>
+                        <li>Pages : {{ .Params.Pages }}</li>
+                        <li>Type de papier : {{ .Params.Paper }}</li>
+                        <li>Motif : {{ .Params.Pattern }}</li>
+                        <li>Reliure : {{ .Params.Binding }}</li>
+                        {{ with .Params.Print }}<li>Imprimeur : {{.}}{{ end }}</li>
+                        <li>Tags :
+                            <ul>
+                                {{ $baseURL := .Site.BaseURL }}
+                                {{ range .Params.Tags }}
+                                    <li><a href="{{ $baseURL }}tags/{{ . | urlize }}">{{ . }}</a> </li>
+                                {{ end }}
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
+                </div>
+                <div class="section-block">
+                    <div class="img-offset">
+                        <img src="{{ .Params.Img }}" alt="{{.Title}}" width="600" height="600" />
+                    </div>
+                </div>
+            </div>
+            <div class="page-content">
+                {{.Content}}
+            </div>
+            
+            {{/*
+                <br><br>
+                Test de partials :<br>
+                {{ partial "custom/related.html" . }}
+                <br><br>
+            */}}
             <br><br>
-            Test de partials :<br>
-            {{ partial "custom/related.html" . }}
-            <br><br>
-            <a href="{{ .Site.BaseURL }}">Retour à la page d'accueil</a>
+            <a href="{{ .Site.BaseURL }}/carnet">Retour à la liste des carnets</a>
         </section>
         
     </article>

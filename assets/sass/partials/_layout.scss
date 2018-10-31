@@ -1,7 +1,7 @@
 
 
 .page-section {
-    margin-bottom:$su*7;
+    margin-bottom:$su*6;
 }
 
 .block-mw {
@@ -48,6 +48,10 @@
         @media (min-width:768px) {
             margin-bottom:0;
         }
+    }
+
+    &--no-margin-top {
+        margin-top:0;
     }
 }
 

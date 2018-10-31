@@ -1,8 +1,10 @@
 {{ define "main" }}
-    <article class="template-carnet-list">
+    <article class="template-carnet-list block-mw rectangle-before">
         <header class="page-header block-mw">
             <h1>Liste des carnets :</h1>
-            <p>Variable testVarIndexMd : {{ .Params.TestVarIndexMd }}</p>
+            {{/* 
+                <p>Variable testVarIndexMd : {{ .Params.TestVarIndexMd }}</p>
+            */}}
         </header>
         <section class="page-wrapper block-mw">
             {{.Content}}
@@ -10,13 +12,15 @@
             <ul class="carnet-list__list">
                 {{ range .Pages }}
                     <li>
-                        <a href="{{.Permalink}}">{{.Title}}</a>
+                        <a href="{{.Permalink}}">
+                            <img src="{{ .Params.Img }}" alt="{{.Title}}" width="200" height="200" /><br>
+                            {{.Title}}
+                        </a>
                     </li>
                 {{ end }}
             </ul>
             <br>
             <a href="{{ .Site.BaseURL }}">Retour à la page d'accueil</a>
         </section>
-        
     </article>
 {{ end }}
