@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="robots" content="noindex, nofollow">
     
-    <link rel="stylesheet" href="/sass/main.min.b9a341f657484cdaf7417030f5a29cddfc722ee950dd966d562d228725630014.css">
+    <link rel="stylesheet" href="/sass/main.min.1dbcf2cb372e996de230e0cee70edb43d7e19bbff3f8d83536626e0717c01498.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -27,10 +27,12 @@
 <meta itemprop="name" content="404 Page not found">
 <meta itemprop="description" content="Un site qui vend des carnets">
 
-</head>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
 
   <body>
-    
+    <div class="site-wrapper">
+        
 <header class="site-header rectangle-before"> 
     <h1 class="site-title">
       <a href="https://brave-ride-4d3713.netlify.com/">Template Note</a><br>
@@ -55,8 +57,8 @@
 
 </header>
 
-    <main role="main">
-      
+        <main role="main">
+          
     <article class="page-wrapper">
       <header class="page-header">
         <div class="block-mw">
@@ -68,17 +70,28 @@
       </header>
     </article>
 
-    </main>
-    <footer class="site-footer block-mw" role="contentinfo">
+        </main>
+        <footer class="site-footer block-mw" role="contentinfo">
 	Template Note 2018
 </footer>
 
+    </div>
     
 
 
 
 
-
+<script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+        if (!user) {
+            window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+            });
+        }
+        });
+    }
+</script>
 
   </body>
 </html>
