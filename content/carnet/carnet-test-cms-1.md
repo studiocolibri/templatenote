@@ -1,7 +1,7 @@
 ---
 title: 'Carnet test cms #1'
 slug: carnet-test-cms-1
-img: /static/assets/uploads/robantho.jpg
+img: 
 price: 30
 color: jaune
 size: 13cm x 18cm
