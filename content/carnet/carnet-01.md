@@ -1,7 +1,7 @@
 ---
 title: "Nom du carnet 01"
 slug: "lien-vers-carnet-01"
-img: "/assets/img/template-note-about.png"
+img: "/assets/img/template-note-about.jpg"
 price : 25
 color: "bleu"
 size: "12cm x 20cm"

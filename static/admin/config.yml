@@ -12,4 +12,17 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Lien URL", name: "slug", widget: "string"}
+      - {label: "Image", name: "img", widget: "image"}
+      - {label: "Prix", name: "price", widget: "number", valueType: "int"}
+      - {label: "Couleur", name: "color", widget: "string"}
+      - {label: "Format", name: "size", widget: "string"}
+      - {label: "Nbr de pages", name: "pages", widget: "number", valueType: "int"}
+      - {label: "Type de papier", name: "paper", widget: "string"}
+      - {label: "Motif", name: "pattern", widget: "string"}
+      - {label: "Reliure", name: "binding", widget: "string"}
+      - {label: "Imprimeur", name: "print", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", allow_add: true, required: false }
+      - {label: "Mis en avant ?", name: "featured", widget: "select", options: ["non", "oui"] }
+      - {label: "Description", name: "body", widget: "markdown"}
