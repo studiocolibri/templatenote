@@ -34,8 +34,7 @@ gulp.task('images', () =>
             width : 600,
             height : 600,
             crop : true,
-            upscale : false,
-            format: 'jpeg'
+            upscale : false
           }))
         .pipe(gulp.dest('static/assets/uploads'))
 );
