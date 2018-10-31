@@ -37,5 +37,5 @@ gulp.task('images', () =>
             upscale : false,
             format: 'jpeg'
           }))
-        .pipe(gulp.dest('static/assets/uploadsOut'))
+        .pipe(gulp.dest('static/assets/uploads'))
 );
