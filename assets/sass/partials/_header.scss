@@ -4,15 +4,51 @@
 
 .site-header {
     @include max-width;
-    border:1px solid $red;
-    padding:$su*5;
-    background-color:$white;
+    margin-top:$su*2;
+    margin-bottom:$su*7;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .site-title {
-    text-transform: uppercase;
-    @include f-ss;
-    color:$red;
+    display:block;
+    
+    a {
+        text-decoration:none;
+        color:$red;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    small {
+        display:block;
+        margin-top:1rem;
+        font-size:0.9rem;
+        max-width:260px;
+        text-transform: initial;
+    }
 }
 
+.site-nav__list {
+    margin:0;
+}
+
+.site-nav__list__item {
+    list-style-type: none;
+    color:$red;
+
+    a {
+        color:$red;
+        text-decoration: none;
+        @include f-ss;
+        font-size:0.9rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
 

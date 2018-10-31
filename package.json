@@ -11,7 +11,9 @@
     "postcss-cli": "^6.0.1"
   },
   "devDependencies": {
-    "gulp-imagemin": "^4.1.0"
+    "gulp-image-resize": "^0.13.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-newer": "^1.4.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

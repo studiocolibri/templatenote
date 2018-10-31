@@ -1,31 +1,33 @@
 {{ define "main" }}
-  <section class="block-mw">
-    <h2>Liste de toutes les pages du site&nbsp;:</h2>
-    {{ range .Pages.GroupBy "Section" }}
-      <h3>{{ .Key }}</h3>
-      <ul>
-          {{ range .Pages }}
-          <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-          </li>
-          {{ end }}
-      </ul>
-    {{ end }}
-    <br><br>
-    <h2>Liste uniquement des 5 premiers carnets organisés par titre&nbsp;:</h2>
+  <section class="page-section block-mw rectangle-before">
+    <div class="section-blocks">
+      <div class="section-block">
+        <h2>About</h2>
+        <p>Handmande notebooks made from 
+          paper surplus.  Handmade 
+          notebooks made from paper 
+          surplus.
+        </p>
+        <p>Handmade notebooks made from 
+          paper surplus.
+        </p>
+      </div>
+      <div class="section-block">
+        <div class="img-offset">
+          <img src="assets/img/template-note-about.png">
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <section class="page-section block-mw rectangle-before">
+    <h2>Nos produits</h2>
     <ul>
-      {{ range first 5 (where .Pages "Section" "carnet").ByTitle }}
+      {{ range (where .Pages "Section" "carnet").ByTitle }}
         <li>
           <a href="{{ .Permalink }}">{{ .Title }}</a>
         </li>
       {{ end }}
-    </ul>
-    <br><br>
-    <h2>Liste des tags du site&nbsp;:</h2>
-    <ul>
-        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-          <li><a href="/tags/{{ $name | urlize }}">{{ $name }}</a></li>
-        {{ end }}
     </ul>
   </section>
 {{ end }}

@@ -1,7 +1,9 @@
 var gulp = require('gulp');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
-const imageminMozjpeg = require('imagemin-mozjpeg'); 
+const imageminMozjpeg = require('imagemin-mozjpeg');
+const gulpImageresize = require("gulp-image-resize");
+const gulpNewer = require("gulp-newer");
 
 gulp.task('default',['minify', 'images']);
 
@@ -13,6 +15,7 @@ gulp.task('minify', () => {
 
 gulp.task('images', () =>
     gulp.src('assets/uploads/*')
+        //.pipe(gulpNewer("public/assets/uploads/"))
         .pipe(imagemin([
             imagemin.gifsicle({interlaced: true}),
             imagemin.jpegtran({progressive: true}),
@@ -27,5 +30,12 @@ gulp.task('images', () =>
                 ]
             })
         ]))
-        .pipe(gulp.dest('assets/uploads-out'))
+        .pipe(gulpImageresize({
+            width : 600,
+            height : 600,
+            crop : true,
+            upscale : false,
+            format: 'jpeg'
+          }))
+        .pipe(gulp.dest('public/assets/uploads'))
 );

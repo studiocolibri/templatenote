@@ -1,7 +1,8 @@
 
-<header class="site-header"> 
-    <h3 class="site-title">
-      <a href="{{ .Site.BaseURL }}">Template Note</a>
-    </h3>
+<header class="site-header rectangle-before"> 
+    <h1 class="site-title">
+      <a href="{{ .Site.BaseURL }}">Template Note</a><br>
+      <small>Handmande notebooks made from paper surplus</small>
+    </h1>
     {{ block "nav" . }}{{ partial "site-navigation.html" .}}{{ end }}
 </header>
