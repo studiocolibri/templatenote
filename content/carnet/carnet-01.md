@@ -1,17 +1,19 @@
 ---
-title: "Nom du carnet 01"
-slug: "lien-vers-carnet-01"
-img: "/assets/img/template-note-about.jpg"
-price : 25
-color: "bleu"
-size: "12cm x 20cm"
-pages: 50
-paper: "papier recyclé"
-pattern: "rectangle"
-binding: "carton"
-print: "Imprimeur Deluxe sprl"
-tags: [testTag, testTagTwo]
-featured: "oui"
+title: Nom du carnet 01
+slug: carnet01
+img: /assets/img/template-note-about.jpg
+price: 25
+color: bleu
+size: 12cm x 20cm
+pages: 60
+paper: papier recyclé
+pattern: rectangle
+binding: carton
+print: Imprimeur Deluxe sprl
+tags:
+  - testTag
+  - testTagTwo
+featured: oui
 ---
 
 Je suis la description du carnet 01
