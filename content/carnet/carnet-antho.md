@@ -1,6 +1,6 @@
 ---
 title: Carnet Antho
-slug: lienducarnet
+slug: carnetantho
 img: /assets/uploads/45085043_354823071954986_7951290564450713600_n.png
 price: 10
 color: Rouge
