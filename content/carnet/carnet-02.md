@@ -1,15 +1,17 @@
 ---
-title: "Nom du carnet 02"
-slug: "lien-vers-carnet-02"
-img: "/assets/img/template-note-about.jpg"
-price : 20
-color: "rouge"
-size: "15cm x 22cm"
+title: Nom du carnet 02
+slug: lien-vers-carnet-02
+img: /assets/uploadsOut/dbu340.jpg
+price: 20
+color: rouge
+size: 15cm x 22cm
 pages: 50
-paper: "papier recyclé"
-pattern: "lignes"
-binding: "aluminium"
-tags: [testTag]
+paper: papier recyclé
+pattern: lignes
+binding: aluminium
+tags:
+  - testTag
+featured: non
 ---
 
 Je suis la description du carnet 02
