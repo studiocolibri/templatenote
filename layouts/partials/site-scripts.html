@@ -1,16 +1,5 @@
-{{ $main := resources.Get "js/main.js" }}
-{{ $test := resources.Get "js/test.js" }}
-{{ $defaultJS := slice $test $main | resources.Concat "js/global.js" }}
+{{ $menu := resources.Get "js/menu.js" }}
+{{ $netlifyIdentity := resources.Get "js/netlifyIdentity.js" }}
+{{ $defaultJS := slice $menu $netlifyIdentity | resources.Concat "js/global.js" }}
 {{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint }}
-<!-- <script src="{{ $globalJS.Permalink }}"></script> -->
-<script>
-    if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-        if (!user) {
-            window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-            });
-        }
-        });
-    }
-</script>
+<script src="{{ $globalJS.Permalink }}"></script>

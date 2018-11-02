@@ -8,11 +8,40 @@
     margin-bottom:$su*4;
     display:flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    padding:0 0 0 $su/2 !important;
+
+    @media (min-width:600px) {
+        padding:0 0 0 2rem  !important;
+    }
+
+    @media (min-width:768px) {
+        padding:2rem 3rem !important;
+    }
+}
+
+.site-header__wrapper {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+
+    @media (min-width:768px) {
+        display:block;
+    }
 }
 
 .site-title {
     display:block;
+    margin-bottom:0;   
+    padding:0.65em 0; 
+
+    @media (min-width:600px) {
+        padding:$su 0;
+    }
+
+    @media (min-width:768px) {
+        padding:0 0 $su 0;
+    }
     
     a {
         text-decoration:none;
@@ -22,22 +51,79 @@
             text-decoration: underline;
         }
     }
+}
 
-    small {
+.site-description {
+    display:none;
+    font-size:0.9rem;
+    margin:0;
+    width:100%;
+    max-width:280px;
+
+    body.nav-opened & {
         display:block;
-        margin-top:1rem;
-        font-size:0.9rem;
-        max-width:260px;
-        text-transform: initial;
+    }
+
+    @media (min-width:768px) {
+        order:2;
+        display:block;
+    }
+}
+
+#toggle-site-nav {
+    width:57px;
+    height:57px;
+    border:none;
+    border-left:1px solid $red;
+    background:transparent;
+    font-size: 1.5rem;
+    color: $red;
+
+    @media (min-width:400px) {
+        height:64px;
+        width:64px;
+    }
+
+    @media (min-width:600px) {
+        height:72px;
+        width:72px;
+    }
+
+    @media (min-width:768px) {
+        display:none;
+    }
+
+    body.nav-opened & {
+        border-left:none;
+    }
+
+    &:hover {
+        cursor:pointer;
     }
 }
 
 .site-nav {
-    margin-left:$su*2;
+
+    @media (min-width:768px) {
+        position: absolute;
+        top:$su;
+        right:3rem;
+        padding:$su;
+    }
 }
 
-.site-nav__list {
+#site-nav__list {
     margin:0;
+    display:none;
+
+    @media (min-width:768px) {
+        display:block;
+    }
+
+    body.nav-opened & {
+        display:block;
+        margin-top:$su/2;
+    }
 }
 
 .site-nav__list__item {
@@ -45,13 +131,32 @@
     color:$red;
 
     a {
+        display:block;
         color:$red;
         text-decoration: none;
         @include f-ss;
         font-size:0.9rem;
+        padding:0.5em 1em 0.5em 0;
+        text-transform: uppercase;
+
+        @media (min-width:768px) {
+            text-transform: none;
+            padding:initial;
+        }
 
         &:hover {
             text-decoration: underline;
+        }
+    }
+
+    &:last-child {
+
+        a {
+            padding-bottom: $su/2;
+
+            @media (min-width:768px) {
+                padding-bottom: $su;
+            }
         }
     }
 }

@@ -1,8 +1,11 @@
 
 <header class="site-header rectangle-before"> 
+  <div class="site-header__wrapper">
     <h1 class="site-title">
-      <a href="{{ .Site.BaseURL }}">Template Note</a><br>
-      <small>Handmande notebooks made from paper surplus</small>
+      <a href="{{ .Site.BaseURL }}">TemplateNote</a><br>
     </h1>
+    <p class="site-description">Handmande notebooks made from paper surplus</p>
     {{ block "nav" . }}{{ partial "site-navigation.html" .}}{{ end }}
+  </div>
+  <button id="toggle-site-nav">&#9776;</button>
 </header>

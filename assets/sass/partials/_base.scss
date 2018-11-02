@@ -23,9 +23,15 @@ html, body {
 body {
     border:15px solid $red;
     background:$white url(../assets/img/templatenote-bg.svg) repeat center center;
+    background-attachment: fixed;
 }
 
 .site-wrapper {
-    padding-right:$su;
-    padding-left:$su*2;
+    padding-right:$su/2;
+    padding-left:$su;
+
+    @media (min-width:400px) {
+        padding-right:$su;
+        padding-left:$su*2;
+    } 
 }
