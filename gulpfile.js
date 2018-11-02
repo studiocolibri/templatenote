@@ -8,7 +8,7 @@ const gulpNewer = require("gulp-newer");
 gulp.task('default',['minify', 'images']);
 
 gulp.task('minify', () => {
-  return gulp.src('public/*.html')
+  return gulp.src('public/**/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('public'));
 });
