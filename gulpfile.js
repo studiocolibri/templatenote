@@ -14,7 +14,7 @@ gulp.task('minify', () => {
 });
 
 gulp.task('images', () =>
-    gulp.src('static/assets/uploads/*')
+    gulp.src('public/assets/uploads/*')
         //.pipe(gulpNewer("public/assets/uploads/"))
         .pipe(imagemin([
             imagemin.gifsicle({interlaced: true}),
@@ -36,5 +36,5 @@ gulp.task('images', () =>
             crop : true,
             upscale : false
           }))
-        .pipe(gulp.dest('static/assets/uploads'))
+        .pipe(gulp.dest('public/assets/uploadsOut'))
 );
