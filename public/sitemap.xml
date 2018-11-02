@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://brave-ride-4d3713.netlify.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://brave-ride-4d3713.netlify.com/</loc>
   </url>
   
@@ -12,6 +17,10 @@
   
   <url>
     <loc>https://brave-ride-4d3713.netlify.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://brave-ride-4d3713.netlify.com/carnet/carnetantho/</loc>
   </url>
   
   <url>
@@ -28,7 +37,7 @@
   </url>
   
   <url>
-    <loc>https://brave-ride-4d3713.netlify.com/carnet/lien-vers-carnet-01/</loc>
+    <loc>https://brave-ride-4d3713.netlify.com/carnet/carnet01/</loc>
   </url>
   
   <url>

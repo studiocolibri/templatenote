@@ -20,6 +20,15 @@
     </item>
     
     <item>
+      <title>Carnet Antho</title>
+      <link>https://brave-ride-4d3713.netlify.com/carnet/carnetantho/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://brave-ride-4d3713.netlify.com/carnet/carnetantho/</guid>
+      <description>Nos superbes carnets sont superbes !</description>
+    </item>
+    
+    <item>
       <title>Carnet test cms #1</title>
       <link>https://brave-ride-4d3713.netlify.com/carnet/carnet-test-cms-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -42,10 +51,10 @@ E-mail</description>
     
     <item>
       <title>Nom du carnet 01</title>
-      <link>https://brave-ride-4d3713.netlify.com/carnet/lien-vers-carnet-01/</link>
+      <link>https://brave-ride-4d3713.netlify.com/carnet/carnet01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://brave-ride-4d3713.netlify.com/carnet/lien-vers-carnet-01/</guid>
+      <guid>https://brave-ride-4d3713.netlify.com/carnet/carnet01/</guid>
       <description>Je suis la description du carnet 01
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non faucibus elit, ut malesuada urna. Sed magna orci, finibus in lectus placerat, ornare tincidunt lorem. Curabitur vehicula euismod risus. Phasellus ut odio vitae neque mattis bibendum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Vestibulum mollis eleifend vehicula. Fusce sollicitudin lacinia urna, a porta lacus. Maecenas quis quam quis nisi finibus facilisis sit amet at dolor.</description>
     </item>
