@@ -1,7 +1,7 @@
 ---
 title: Carnet Antho
 slug: carnetantho
-img: /assets/uploadsOut/dbu340.jpg
+img: /assets/uploadsOut/kid-gohan.png
 price: 10
 color: Rouge
 size: 40x22
