@@ -4,7 +4,7 @@
 
 .site-header {
     @include max-width;
-    margin-top:$su*2;
+    margin-top:$su*3.5;
     margin-bottom:$su*4;
     display:flex;
     justify-content: space-between;
@@ -16,7 +16,7 @@
     }
 
     @media (min-width:768px) {
-        padding:2rem $su*2 !important;
+        padding:3rem $su*2 !important;
     }
 }
 
@@ -41,7 +41,7 @@
     }
 
     @media (min-width:768px) {
-        padding:0 0 $su 0;
+        padding:0 0 $su/4 0;
     }
     
     a {
@@ -146,7 +146,6 @@
         text-transform: uppercase;
 
         @media (min-width:768px) {
-            text-transform: none;
             padding:initial;
         }
 

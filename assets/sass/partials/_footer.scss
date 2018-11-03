@@ -8,3 +8,32 @@
     padding-bottom:$su;
 	position: relative;
 }
+
+
+.footer-content {
+    margin-top: $su;
+	display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.footer-content__item {
+    width:100%;
+    list-style-type: none;
+	margin-bottom: $su*1.5;
+
+    @media (min-width:320px) {
+        width:100%;
+    }
+
+    @media (min-width:768px) {
+        width:30%;
+		margin-bottom: 0;
+
+    }
+	
+	& a {
+		text-decoration: none;
+		color: $text-color;
+	}  
+}

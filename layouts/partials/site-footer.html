@@ -1,3 +1,39 @@
 <footer class="site-footer block-mw" role="contentinfo">
+	<section class="page-section block-mw rectangle-before">
+        <ul class="footer-content">
+		<li class="footer-content__item">
+          <h3 class="shoplist__item__title">
+			TEMPLATE NOTE            
+			</h3>
+			<ul>
+				<li>Nastasia Anzad</li>
+				<li>info@templatenote.com</li>
+				<li>Rue de la rue, 22</li>
+				<li>1080 Bruxelles</li>	
+			</ul>
+        </li> 
+		<li class="footer-content__item">
+          <h3 class="shoplist__item__title">
+			OUR COLLECTION          </h3>
+            <ul>
+      {{ range where .Site.Pages "Params.featured" "oui" }}
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+        </li> 
+		<li class="footer-content__item">
+          <h3 class="shoplist__item__title">
+			FOLLOW US            
+          </h3>
+			<ul>
+				<li><a href="#">Shop Tictail</a></li>
+				<li><a href="#">Instagram</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Mail</a></li>
+		    </ul>
+  </section>
 	Template Note 2018
 </footer>

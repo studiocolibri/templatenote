@@ -1,5 +1,6 @@
 .shoplist {
-    display:flex;
+    margin-top: $su*2.5;
+	display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
 }
@@ -22,4 +23,10 @@
     img {
         width:100%;
     }
+}
+
+.shoplist__item__title a {
+	text-decoration: none;
+	color: $red;
+	
 }

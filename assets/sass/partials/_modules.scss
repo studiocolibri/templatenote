@@ -26,7 +26,7 @@
 
 .rectangle-before {
     position:relative;
-    padding:$su $su/2;
+    padding:$su*2 $su/2;
     border:1px solid $red;
     background-color:$white;
 
@@ -35,7 +35,7 @@
     }
 
     @media (min-width:768px) {
-        padding:3rem $su*2;
+        padding:3rem $su*3;
     }
 
     &:before {
@@ -56,6 +56,7 @@
         @media (min-width:400px) {
             transform:translate(-#{$su}, -#{$su});
         }
+			
     }
 }
 
