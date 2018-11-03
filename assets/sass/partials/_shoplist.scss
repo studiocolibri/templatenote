@@ -1,0 +1,25 @@
+.shoplist {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.shoplist__item {
+    width:100%;
+    list-style-type: none;
+
+    @media (min-width:400px) {
+        width:45%;
+    }
+
+    @media (min-width:768px) {
+        width:30%;
+    }
+}
+
+.shoplist__item__img {
+    
+    img {
+        width:100%;
+    }
+}

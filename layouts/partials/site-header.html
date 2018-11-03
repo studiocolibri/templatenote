@@ -7,5 +7,7 @@
     <p class="site-description">Handmande notebooks made from paper surplus</p>
     {{ block "nav" . }}{{ partial "site-navigation.html" .}}{{ end }}
   </div>
-  <button id="toggle-site-nav">&#9776;</button>
+  <button id="toggle-site-nav">
+    <svg class="toggle-site-nav__img" viewBox="0 0 30 24" width="30px" height="24px"><style>.st0{fill:#f44b55}</style><path class="st0" d="M0 0h30v2H0z"/><path fill="#fff" d="M0 22h30v2H0z"/><path class="st0" d="M30 22H0v2h30v-2z"/><g><path class="st0" d="M0 11h30v2H0z"/></g></svg>
+  </button>
 </header>

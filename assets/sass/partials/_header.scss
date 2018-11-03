@@ -34,6 +34,7 @@
     display:block;
     margin-bottom:0;   
     padding:0.65em 0; 
+    margin-right:$su/2;
 
     @media (min-width:600px) {
         padding:$su 0;
@@ -100,6 +101,11 @@
     &:hover {
         cursor:pointer;
     }
+}
+
+.toggle-site-nav__img {
+    width: 26px;
+    margin-top: 7px;
 }
 
 .site-nav {

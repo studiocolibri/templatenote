@@ -4,11 +4,9 @@
 
 @mixin max-width($length:$mw) {
     width:100%;
+    max-width:$length;
     margin-left:auto;
     margin-right:auto;
-    padding-right:$su;
-    padding-left:$su;
-    max-width:$length;
     /* @if $length {
         max-width: $length;
     } @else {

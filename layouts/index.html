@@ -14,20 +14,21 @@
     
   </section>
   <section class="page-section block-mw rectangle-before">
-    <h2>Nos carnets</h2>
-    <ul>
-      {{ range (where .Pages "Section" "carnet").ByTitle }}
-        <li>
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </li>
-      {{ end }}
-    </ul>
-    <br><br>
-    <h2>Carnets mis en avant</h2>
-    <ul>
+    <h2>Our template notes</h2>
+    <ul class="shoplist">
       {{ range where .Site.Pages "Params.featured" "oui" }}
-        <li>
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <li class="shoplist__item">
+          <a class="shoplist__item__img" href="{{ .Permalink }}">
+            <img src="{{ .Params.Img }}" alt="{{ .Title }}">
+          </a>
+          <h3 class="shoplist__item__title">
+            <a href="{{ .Permalink }}">
+              {{ .Title }}
+            </a>
+          </h3>
+          <p class="shoplist__item__description">
+            {{ .Content | truncate 30 }}
+          </p>
         </li>
       {{ end }}
     </ul>
