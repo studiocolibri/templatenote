@@ -18,6 +18,26 @@
     display: inline-block;
     position: relative;
     transition: 130ms color ease-out;
+	
+
+    &:hover, &:focus {
+        
+    }
+}
+
+.text-link--bigger {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    transition: 130ms color ease-out;
+	@include f-ss;
+	color: $red;
+	font-size: 0.85rem;
+	
+	&:hover:after {
+		content:" →"
+	}
+	
 
     &:hover, &:focus {
         
