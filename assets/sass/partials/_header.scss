@@ -126,6 +126,7 @@
 
     @media (min-width:768px) {
         display:block;
+		line-height: 1.65em;
     }
 
     body.nav-opened & {
@@ -142,6 +143,7 @@
         display:block;
         color:$red;
         text-decoration: none;
+		
         @include f-ss;
         font-size:0.9rem;
         padding:0.5em 1em 0.5em 0;
