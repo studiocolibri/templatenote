@@ -38,8 +38,8 @@
 
     @media (min-width:768px) {
         width:calc(50% - #{$su * 3});
-        margin-top:$su*3;
-        margin-bottom:$su*3;
+/*        margin-top:$su*3;
+        margin-bottom:$su*3;*/
     }
 
     &--padding-space{
