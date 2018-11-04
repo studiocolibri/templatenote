@@ -16,7 +16,7 @@
     }
 
     @media (min-width:768px) {
-        padding:3rem $su*2 !important;
+        padding:4rem 4rem !important;
     }
 }
 
@@ -112,7 +112,7 @@
 
     @media (min-width:768px) {
         position: absolute;
-        top:$su;
+        top:$su*2.5;
         right:3rem;
         padding:$su;
     }
