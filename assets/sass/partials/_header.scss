@@ -4,8 +4,8 @@
 
 .site-header {
     @include max-width;
-    margin-top:$su*3.5;
-    margin-bottom:$su*4;
+    margin-top:$su*2;
+	margin-bottom:$su*4;
     display:flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -13,6 +13,8 @@
 
     @media (min-width:600px) {
         padding:0 0 0 $su  !important;
+		margin-top:$su*3.5;
+
     }
 
     @media (min-width:768px) {
