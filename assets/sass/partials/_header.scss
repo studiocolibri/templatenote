@@ -16,7 +16,7 @@
     }
 
     @media (min-width:768px) {
-        padding:4rem 4rem !important;
+        padding:3rem 4rem !important;
     }
 }
 
@@ -114,9 +114,9 @@
 
     @media (min-width:768px) {
         position: absolute;
-        top:$su*2.5;
-        right:3rem;
-        padding:$su;
+        top:50%;
+		transform: translateY(-50%);
+        right:4rem;
     }
 }
 
@@ -158,15 +158,15 @@
         }
     }
 
-    &:last-child {
+    /*&:last-child {
 
         a {
             padding-bottom: $su/2;
 
             @media (min-width:768px) {
-                padding-bottom: $su;
+//                padding-bottom: $su;
             }
         }
-    }
+    }*/
 }
 
