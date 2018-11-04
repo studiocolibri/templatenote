@@ -21,10 +21,17 @@ html, body {
 }
 
 body {
-    border:15px solid $red;
+    border:10px solid $red;
     background:$white url(../assets/img/templatenote-bg.svg) repeat top center;
     background-attachment: fixed;
+
+@media (min-width:600px) {
+    border:15px solid $red;
+
+    } 
+
 }
+	
 
 .site-wrapper {
     padding-right:$su/2;
