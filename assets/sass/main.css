@@ -151,7 +151,7 @@ ul {
   } @else {
       max-width: $mw;
   } */
-  margin-top: 70px;
+  margin-top: 40px;
   margin-bottom: 80px;
   display: flex;
   justify-content: space-between;
@@ -159,10 +159,11 @@ ul {
   padding: 0 0 0 10px !important; }
   @media (min-width: 600px) {
     .site-header {
-      padding: 0 0 0 20px !important; } }
+      padding: 0 0 0 20px !important;
+      margin-top: 70px; } }
   @media (min-width: 768px) {
     .site-header {
-      padding: 3rem 40px !important; } }
+      padding: 3rem 4rem !important; } }
 
 .site-header__wrapper {
   display: flex;
@@ -170,7 +171,8 @@ ul {
   justify-content: center; }
   @media (min-width: 768px) {
     .site-header__wrapper {
-      display: block; } }
+      display: block;
+      width: 100%; } }
 
 .site-title {
   display: block;
@@ -182,7 +184,9 @@ ul {
       padding: 20px 0; } }
   @media (min-width: 768px) {
     .site-title {
-      padding: 0 0 5px 0; } }
+      padding: 0 0 5px 0;
+      font-size: 1.6em;
+      width: 100%; } }
   .site-title a {
     text-decoration: none;
     color: #F7858B; }
@@ -233,23 +237,35 @@ ul {
 @media (min-width: 768px) {
   .site-nav {
     position: absolute;
-    top: 20px;
-    right: 3rem;
-    padding: 20px; } }
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4rem; } }
 
 #site-nav__list {
   margin: 0;
   display: none; }
   @media (min-width: 768px) {
     #site-nav__list {
-      display: block; } }
+      display: block;
+      line-height: 1.65em; } }
   body.nav-opened #site-nav__list {
     display: block;
     margin-top: 10px; }
 
 .site-nav__list__item {
   list-style-type: none;
-  color: #F7858B; }
+  color: #F7858B;
+  height: 1.6em;
+    /*&:last-child {
+
+        a {
+            padding-bottom: $su/2;
+
+            @media (min-width:768px) {
+//                padding-bottom: $su;
+            }
+        }
+    }*/ }
   .site-nav__list__item a {
     display: block;
     color: #F7858B;
@@ -263,11 +279,6 @@ ul {
         padding: initial; } }
     .site-nav__list__item a:hover {
       text-decoration: underline; }
-  .site-nav__list__item:last-child a {
-    padding-bottom: 10px; }
-    @media (min-width: 768px) {
-      .site-nav__list__item:last-child a {
-        padding-bottom: 20px; } }
 
 /*
 * FOOTER
