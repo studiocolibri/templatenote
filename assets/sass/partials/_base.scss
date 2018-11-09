@@ -34,10 +34,10 @@ body {
 
 }
 	
-
 .site-wrapper {
     padding-right:$su/2;
     padding-left:$su;
+	overflow: hidden;
 
     @media (min-width:400px) {
         padding-right:$su;

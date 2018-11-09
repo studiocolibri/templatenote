@@ -19,17 +19,15 @@
                             <ul>
                                 {{ $baseURL := .Site.BaseURL }}
                                 {{ range .Params.Tags }}
-                                    <li><a href="{{ $baseURL }}tags/{{ . | urlize }}">{{ . }}</a> </li>
+                                    <li><a href="{{ $baseURL }}tags/{{ . | urlize }}" class="text-link--bigger">{{ . }}</a> </li>
                                 {{ end }}
                             </ul>
                         </li>
                     </ul>
                 </div>
-                <div class="section-block">
-                    <div class="img-offset">
+                <div class="section-block">  
                         <div class="img-wrapper">
                             <img src="{{ .Params.Img }}" alt="{{.Title}}" width="600" height="600" />
-                        </div>
                     </div>
                 </div>
             </div>
@@ -44,7 +42,7 @@
                 <br><br>
             */}}
             <br><br>
-            <a href="{{ .Site.BaseURL }}/carnet">Retour à la liste des carnets</a>
+            <a href="{{ .Site.BaseURL }}/carnet" class="text-link--back">← Retour à la liste des carnets</a>
         </section>
         
     </article>

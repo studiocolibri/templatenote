@@ -4,8 +4,7 @@
 {{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint }}
 <script src="{{ $globalJS.Permalink }}"></script>
 <script>
-
-
+	
 var canvas, ctx, flag = false,
     prevX = 0,
     currX = 0,
