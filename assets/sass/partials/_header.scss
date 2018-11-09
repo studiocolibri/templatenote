@@ -29,6 +29,7 @@
 
     @media (min-width:768px) {
         display:block;
+		width:100%;
     }
 }
 
@@ -140,6 +141,7 @@
 .site-nav__list__item {
     list-style-type: none;
     color:$red;
+	height:2em;
 
     a {
         display:block;
