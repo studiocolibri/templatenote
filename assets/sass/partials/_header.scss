@@ -45,8 +45,8 @@
 
     @media (min-width:768px) {
         padding:0 0 $su/4 0;
-		font-size: 1.6em;
- 
+	font-size: 1.6em;
+ 	width:100%;
     }
     
     a {
@@ -141,7 +141,7 @@
 .site-nav__list__item {
     list-style-type: none;
     color:$red;
-	height:1.6em;
+    height:1.6em;
 
     a {
         display:block;
