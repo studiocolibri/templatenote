@@ -412,6 +412,9 @@ ul {
 #can {
   z-index: 8;
   position: absolute; }
+  @media (max-width: 768px) {
+    #can {
+      display: none; } }
 
 .shoplist {
   margin-top: 50px;

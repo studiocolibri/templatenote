@@ -125,5 +125,8 @@
 #can {
 	z-index:8;
 	position:absolute;
-
+	
+	@media (max-width:768px) {
+            display: none;
+        }
 }
