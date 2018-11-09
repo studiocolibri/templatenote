@@ -2,6 +2,7 @@ baseURL = "https://brave-ride-4d3713.netlify.com/"
 languageCode = "fr"
 DefaultContentLanguage = "fr"
 title = "Template Note"
+theme = templatenote
 
 [params]
   author = "Studio Colibri"
