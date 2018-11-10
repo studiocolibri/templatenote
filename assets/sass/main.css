@@ -465,7 +465,8 @@ ul {
   @media (min-width: 768px) {
     .shoplist__item {
       width: 30%;
-      z-index: 9; } }
+      z-index: 9;
+      height: 450px; } }
 
 .shoplist__item__img img {
   width: 100%; }
