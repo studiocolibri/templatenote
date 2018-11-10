@@ -30,7 +30,7 @@ html, body {
   font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
   font-size: 16px;
   font-weight: 400;
-  color: #F7858B;
+  color: var(--templateColor);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -43,12 +43,12 @@ html, body {
       font-size: 20px; } }
 
 body {
-  border: 10px solid #F7858B;
+  border: 10px solid var(--templateColor);
   background: #F9F6EF url(../assets/img/templatenote-bg.svg) repeat top center;
   background-attachment: fixed; }
   @media (min-width: 600px) {
     body {
-      border: 15px solid #F7858B; } }
+      border: 15px solid var(--templateColor); } }
 
 .site-wrapper {
   padding-right: 10px;
@@ -126,7 +126,7 @@ h1, h2, h3 {
   margin-bottom: 0.25em;
   line-height: 1.25;
   font-family: Helvetica, Arial, sans-serif;
-  color: #F7858B;
+  color: var(--templateColor);
   text-transform: uppercase; }
 
 h1 {
@@ -202,7 +202,7 @@ ul {
       width: 100%; } }
   .site-title a {
     text-decoration: none;
-    color: #F7858B; }
+    color: var(--templateColor); }
     .site-title a:hover {
       text-decoration: underline; }
 
@@ -223,11 +223,11 @@ ul {
   width: 57px;
   height: 57px;
   border: none;
-  border-left: 1px solid #F7858B;
+  border-left: 1px solid var(--templateColor);
   background: transparent;
   font-size: 1.5rem;
-  color: #F7858B; }
-  @media (min-width: 400px) {
+  color: var(--templateColor); }
+  @media (min-width: 320px) {
     #toggle-site-nav {
       height: 64px;
       width: 64px; } }
@@ -268,7 +268,7 @@ ul {
 
 .site-nav__list__item {
   list-style-type: none;
-  color: #F7858B;
+  color: var(--templateColor);
     /*&:last-child {
 
         a {
@@ -281,7 +281,7 @@ ul {
     }*/ }
   .site-nav__list__item a {
     display: block;
-    color: #F7858B;
+    color: var(--templateColor);
     text-decoration: none;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 0.9rem;
@@ -323,7 +323,7 @@ ul {
       margin-bottom: 0; } }
   .footer-content__item a {
     text-decoration: none;
-    color: #F7858B; }
+    color: var(--templateColor); }
   .footer-content__item h3 {
     margin-bottom: 16px; }
 
@@ -348,7 +348,7 @@ ul {
   position: relative;
   transition: 130ms color ease-out;
   font-family: Helvetica, Arial, sans-serif;
-  color: #F7858B;
+  color: var(--templateColor);
   font-size: 0.85rem;
   position: relative;
   z-index: 9;
@@ -362,7 +362,7 @@ ul {
   position: relative;
   transition: 130ms color ease-out;
   font-family: Helvetica, Arial, sans-serif;
-  color: #F7858B;
+  color: var(--templateColor);
   font-size: 0.85rem;
   z-index: 9;
   text-transform: uppercase; }
@@ -370,7 +370,7 @@ ul {
 .rectangle-before {
   position: relative;
   padding: 40px 10px;
-  border: 1px solid #F7858B;
+  border: 1px solid var(--templateColor);
   background-color: #F9F6EF; }
   @media (min-width: 600px) {
     .rectangle-before {
@@ -378,7 +378,7 @@ ul {
   @media (min-width: 768px) {
     .rectangle-before {
       padding: 4rem 4rem;
-      border: 2px solid #F7858B; } }
+      border: 2px solid var(--templateColor); } }
   .rectangle-before:before {
     content: '';
     display: block;
@@ -387,7 +387,7 @@ ul {
     width: 100%;
     height: 100%;
     background-color: #F9F6EF;
-    border: 1px solid #F7858B;
+    border: 1px solid var(--templateColor);
     top: 0;
     right: 0;
     bottom: 0;
@@ -398,7 +398,7 @@ ul {
         transform: translate(-20px, -20px); } }
     @media (min-width: 768px) {
       .rectangle-before:before {
-        border: 2px solid #F7858B; } }
+        border: 2px solid var(--templateColor); } }
 
 @media (min-width: 400px) {
   .img-offset {
@@ -410,7 +410,7 @@ ul {
   .img-wrapper:before {
     content: '';
     display: block;
-    background: #F7858B;
+    background: var(--templateColor);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -475,4 +475,4 @@ ul {
   margin-top: 20px; }
   .shoplist__item__title a {
     text-decoration: none;
-    color: #F7858B; }
+    color: var(--templateColor); }

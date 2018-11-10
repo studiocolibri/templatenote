@@ -4,3 +4,12 @@
 {{ $defaultJS := slice $canvas $menu $netlifyIdentity | resources.Concat "js/global.js" }}
 {{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint }}
 <script src="{{ $globalJS.Permalink }}"></script>
+<script>
+function getColor() {
+    var newColor = document.getElementById("myBtn").value;
+    document.getElementById("demo").innerHTML = newColor;
+	document.styleSheets[0].rules[0].style.setProperty("--templateColor", newColor);
+
+}
+
+</script>

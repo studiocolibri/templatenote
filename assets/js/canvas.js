@@ -4,7 +4,7 @@ window.addEventListener("load", windowSize, true);
     var elmnt = document.body;
     var y = elmnt.scrollHeight;
     var x = elmnt.scrollWidth;
-    document.getElementById ("demo").innerHTML = "Height: " + y + "px<br>Width: " + x + "px";
+//    document.getElementById ("demo").innerHTML = "Height: " + y + "px<br>Width: " + x + "px";
 	document.getElementsByTagName("canvas")[0].setAttribute("height", y);
 	document.getElementsByTagName("canvas")[0].setAttribute("width", x);
 }

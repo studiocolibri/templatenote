@@ -85,7 +85,7 @@
     font-size: 1.5rem;
     color: $red;
 
-    @media (min-width:400px) {
+    @media (min-width:320px) {
         height:64px;
         width:64px;
     }
@@ -101,6 +101,7 @@
 
     body.nav-opened & {
         border-left:none;
+
     }
 
     &:hover {
