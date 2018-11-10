@@ -27,9 +27,9 @@
     {{- template "_internal/schema.html" . -}}
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
-	<body onload="init()">
+	<body>
 		{{ partial "site-canvas.html" . }}
-    <div class="site-wrapper">
+    <div class="site-wrapper" onload="myFunction()">
         {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
         <main role="main">
           {{ block "main" . }}{{ end }}
