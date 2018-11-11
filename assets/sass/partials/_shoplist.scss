@@ -8,6 +8,7 @@
 .shoplist__item {
     width:100%;
     list-style-type: none;
+    margin-bottom:$su*2;
 
     @media (min-width:400px) {
         width:45%;
@@ -15,8 +16,17 @@
 
     @media (min-width:768px) {
         width: 30%;
-    	z-index: 9;
-    	height: 450px;
+        z-index: 9;
+        margin-bottom:$su*4;
+    }
+}
+
+.shoplist__item--view-all {
+
+    &__link, &__img {
+        display:block;
+        width:100%;
+        height:100%;
     }
 }
 

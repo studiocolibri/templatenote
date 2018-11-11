@@ -1,1 +1,227 @@
-<!DOCTYPE html><html lang="fr"><head><meta name="generator" content="Hugo 0.49"><meta charset="utf-8"><meta name="language" content="fr"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><title>Template Note</title><meta name="author" content="Studio Colibri"><meta name="description" content="Un site qui vend des carnets"><meta name="viewport" content="width=device-width,minimum-scale=1"><meta name="robots" content="noindex, nofollow"><link rel="stylesheet" href="/sass/main.min.c93ad2c00e848ae383265558702b86e8cbe2b33f698409edcd26844263b15983.css"><link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"><link rel="manifest" href="/site.webmanifest"><link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#ffffff"><meta itemprop="name" content=""><meta itemprop="description" content="Un site qui vend des carnets"><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script></head><body><div class="site-wrapper"><header class="site-header rectangle-before"><h1 class="site-title"><a href="https://brave-ride-4d3713.netlify.com/">Template Note</a><br><small>Handmande notebooks made from paper surplus</small></h1><nav class="site-nav" role="navigation"><button id="toggle-site-nav">Toggle</button><ul id="site-nav__list"><li class="site-nav__list__item"><a href="/">Home</a></li><li class="site-nav__list__item"><a href="/about">About</a></li><li class="site-nav__list__item"><a href="/carnet">Carnets</a></li><li class="site-nav__list__item"><a href="/contact">Contact</a></li></ul></nav></header><main role="main"><section class="page-section block-mw rectangle-before"><div class="section-blocks"><div class="section-block"><h2>About</h2><p>📒 Notebooks & Notepads - RISO Printed in Brussels - Limited editions - Hand drawn patterns 🖊️📐 - All from paper surplus ♻️</p></div><div class="section-block section-block--no-margin-top"><div class="img-offset"><img src="assets/img/template-note-about.jpg"></div></div></div></section><section class="page-section block-mw rectangle-before"><h2>Nos carnets</h2><ul><li><a href="https://brave-ride-4d3713.netlify.com/carnet/carnetantho/">Carnet Antho</a></li><li><a href="https://brave-ride-4d3713.netlify.com/carnet/carnet-test-cms-1/">Carnet test cms #1</a></li><li><a href="https://brave-ride-4d3713.netlify.com/carnet/carnet01/">Nom du carnet 01</a></li><li><a href="https://brave-ride-4d3713.netlify.com/carnet/lien-vers-carnet-02/">Nom du carnet 02</a></li></ul><br><br><h2>Carnets mis en avant</h2><ul><li><a href="https://brave-ride-4d3713.netlify.com/carnet/carnetantho/">Carnet Antho</a></li><li><a href="https://brave-ride-4d3713.netlify.com/carnet/carnet-test-cms-1/">Carnet test cms #1</a></li><li><a href="https://brave-ride-4d3713.netlify.com/carnet/carnet01/">Nom du carnet 01</a></li></ul></section></main><footer class="site-footer block-mw" role="contentinfo">Template Note 2018</footer></div><script src="https://brave-ride-4d3713.netlify.com/js/global.min.d231b1741a04999e08ee5de3b8d38039a0fc5e5805cecbe65f1eafd98a2f959d.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="fr">
+  
+  <head>
+	<meta name="generator" content="Hugo 0.49" />
+    <meta charset="utf-8">
+    <meta name="language" content="fr" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+	  <title>Template Note</title>
+    <meta name="author" content='Studio Colibri'>
+    <meta name="description" content='Un site qui vend des carnets'>
+   
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+	<style>
+		:root {
+  	--templateColor: #F7858B;
+		}  
+
+	</style>
+    
+    <link rel="stylesheet" href="/sass/main.min.e0f224ee534080ae3a542a4fade851147de39e08bcf94a44ae8a322dc3fa92c1.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="Un site qui vend des carnets">
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+	<body>
+		<select id="myBtn" onchange="getColor()">
+  <option value="black">black</option>
+  <option value="#F7858B">red</option>
+  <option value="pink">pink</option>
+  <option value="blue">blue</option>
+		</select>
+		<div id="demo" style="display:none"></div>
+		<div class="canvas-container">
+	<canvas id="can" width="1200" height="2000"></canvas>
+</div>
+    <div class="site-wrapper" onload="myFunction()">
+        
+<header class="site-header rectangle-before"> 
+  <div class="site-header__wrapper">
+    <h1 class="site-title">
+      <a href="https://brave-ride-4d3713.netlify.com/">TemplateNote</a><br>
+    </h1>
+    <p class="site-description">Handmande notebooks made from paper surplus</p>
+    <nav class="site-nav" role="navigation">
+  <ul id="site-nav__list">
+    <li class="site-nav__list__item">
+        <a href="/">Home</a>
+    </li>
+    <li class="site-nav__list__item">
+        <a href="/about">About</a>
+    </li>
+    <li class="site-nav__list__item">
+        <a href="/carnet">Carnets</a>
+    </li>
+    <li class="site-nav__list__item">
+      <a href="/contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+  </div>
+  <button id="toggle-site-nav">
+    <svg class="toggle-site-nav__img" viewBox="0 0 30 24" width="30px" height="24px"><style>.st0{fill:#f44b55}</style><path class="st0" d="M0 0h30v2H0z"/><path fill="#fff" d="M0 22h30v2H0z"/><path class="st0" d="M30 22H0v2h30v-2z"/><g><path class="st0" d="M0 11h30v2H0z"/></g></svg>
+  </button>
+</header>
+
+        <main role="main">
+          
+  <section class="page-section block-mw rectangle-before">
+    <div class="section-blocks">
+      <div class="section-block">
+        <h2>About</h2>
+        <p>Notebooks & Notepads - RISO Printed in Brussels - Limited editions - Hand drawn patterns  - All from paper surplus. </p><br>
+		  <a href="/about" class="text-link--bigger">MORE INFO</a>
+      </div>
+      <div class="section-block section-block--no-margin-top">
+        <div class="img-wrapper img-offset">
+          <img src="assets/uploadsOut/template-note-about.jpg" >
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <section class="page-section block-mw rectangle-before">
+    <h2>Our template notes</h2>
+    <ul class="shoplist">
+      
+        <li class="shoplist__item">
+          <a class="shoplist__item__img img-wrapper" href="https://brave-ride-4d3713.netlify.com/carnet/carnetantho/">
+            <img src="/assets/uploadsOut/kid-gohan.png" alt="Carnet Antho">
+          </a>
+          <h3 class="shoplist__item__title">
+            <a href="https://brave-ride-4d3713.netlify.com/carnet/carnetantho/">
+              Carnet Antho
+            </a>
+          </h3>
+          <p class="shoplist__item__description">
+            <p>Nos superbes carnets sont superbes !</p>
+
+          </p>
+        </li>
+      
+        <li class="shoplist__item">
+          <a class="shoplist__item__img img-wrapper" href="https://brave-ride-4d3713.netlify.com/carnet/carnet-test-cms-1/">
+            <img src="/assets/uploadsOut/template-note-about.jpg" alt="Carnet test cms #1">
+          </a>
+          <h3 class="shoplist__item__title">
+            <a href="https://brave-ride-4d3713.netlify.com/carnet/carnet-test-cms-1/">
+              Carnet test cms #1
+            </a>
+          </h3>
+          <p class="shoplist__item__description">
+            <p>Je suis la description du carnet 01</p>
+
+<p>Lorem …</p>
+          </p>
+        </li>
+      
+        <li class="shoplist__item">
+          <a class="shoplist__item__img img-wrapper" href="https://brave-ride-4d3713.netlify.com/carnet/carnet01/">
+            <img src="/assets/img/template-note-about.jpg" alt="Nom du carnet 01">
+          </a>
+          <h3 class="shoplist__item__title">
+            <a href="https://brave-ride-4d3713.netlify.com/carnet/carnet01/">
+              Nom du carnet 01
+            </a>
+          </h3>
+          <p class="shoplist__item__description">
+            <p>Je suis la description du carnet 01</p>
+
+<p>Lorem …</p>
+          </p>
+        </li>
+      
+      <li class="shoplist__item shoplist__item--view-all">
+        <a class="shoplist__item--view-all__link" href="/carnets">
+          <span class="shoplist__item--view-all__link__txt">View all collections</span>
+          <span class="shoplist__item--view-all__link__arrow">⟶</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+        </main>
+        <footer class="site-footer block-mw" role="contentinfo">
+	<section class="page-section rectangle-before">
+        <ul class="footer-content">
+		<li class="footer-content__item">
+          <h3 class="shoplist__item__title">
+			TEMPLATE NOTE            
+			</h3>
+			<ul>
+				<li>Nastasia Anzad</li>
+				<li><a href="mailto:info@templatenote.com">info@templatenote.com</a></li>
+				<li>Rue de la rue, 22</li>
+				<li>1080 Bruxelles</li>	
+			</ul>
+        </li> 
+		<li class="footer-content__item">
+          <h3 class="shoplist__item__title">
+			OUR COLLECTION          </h3>
+            <ul>
+      
+        <li>
+          <a href="https://brave-ride-4d3713.netlify.com/carnet/carnetantho/">Carnet Antho
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://brave-ride-4d3713.netlify.com/carnet/carnet-test-cms-1/">Carnet test cms #1
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://brave-ride-4d3713.netlify.com/carnet/carnet01/">Nom du carnet 01
+          </a>
+        </li>
+      
+    </ul>
+        </li> 
+		<li class="footer-content__item">
+          <h3 class="shoplist__item__title">
+			FOLLOW US            
+          </h3>
+			<ul>
+				<li><a href="#">Shop Tictail</a></li>
+				<li><a href="#">Instagram</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Mail</a></li>
+		    </ul>
+  </section>
+	Template Note 2018
+</footer>
+
+    </div>
+    
+
+
+
+
+<script src="https://brave-ride-4d3713.netlify.com/js/global.min.9b27238f27110db5fd7d524c4556e04923f96edf0c5bb67424f764cbf7f74a3d.js"></script>
+<script>
+function getColor() {
+    var newColor = document.getElementById("myBtn").value;
+    document.getElementById("demo").innerHTML = newColor;
+	document.styleSheets[0].rules[0].style.setProperty("--templateColor", newColor);
+
+}
+
+</script>
+
+  </body>
+</html>
