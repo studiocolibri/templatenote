@@ -6,9 +6,9 @@
 <script src="{{ $globalJS.Permalink }}"></script>
 <script>
 function getColor() {
-    var newColor = document.getElementById("myBtn").value;
+    var newColor = document.getElementById("changeColor").value;
     document.getElementById("demo").innerHTML = newColor;
-	document.styleSheets[0].rules[0].style.setProperty("--templateColor", newColor);
+    document.documentElement.style.setProperty("--templateColor", newColor);
 
 }
 

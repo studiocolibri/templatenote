@@ -34,14 +34,7 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
 	<body>
-		<select id="myBtn" onchange="getColor()">
-  <option value="black">black</option>
-  <option value="#F7858B">red</option>
-  <option value="pink">pink</option>
-  <option value="blue">blue</option>
-		</select>
-		<div id="demo" style="display:none"></div>
-		{{ partial "site-canvas.html" . }}
+    
     <div class="site-wrapper" onload="myFunction()">
         {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
         <main role="main">
@@ -49,6 +42,16 @@
         </main>
         {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
     </div>
+    
+    <select id="changeColor" onchange="getColor()">
+      <option value="black">black</option>
+      <option value="#F7858B">red</option>
+      <option value="pink">pink</option>
+      <option value="blue">blue</option>
+    </select>
+		<div id="demo" style="display:none"></div>
+    {{ partial "site-canvas.html" . }}
+    
     {{ block "scripts" . }}{{ partial "site-scripts.html" . }}{{ end }}
   </body>
 </html>
