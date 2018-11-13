@@ -35,14 +35,14 @@
   </head>
 	<body>
     
-    <div class="site-wrapper" onload="myFunction()">
+    <div class="site-wrapper">
         {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
         <main role="main">
           {{ block "main" . }}{{ end }}
         </main>
         {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
     </div>
-    
+    <button id="canvas-button" onclick="windowSize(); init();"></button>
     <select id="changeColor" onchange="getColor()">
       <option value="black">black</option>
       <option value="#F7858B">red</option>

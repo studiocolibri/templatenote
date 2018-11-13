@@ -1,15 +1,14 @@
-window.addEventListener("load", windowSize, true);
-
-	function windowSize() {
+function windowSize() {
     var elmnt = document.body;
     var y = elmnt.scrollHeight;
     var x = elmnt.scrollWidth;
-//    document.getElementById ("demo").innerHTML = "Height: " + y + "px<br>Width: " + x + "px";
 	document.getElementsByTagName("canvas")[0].setAttribute("height", y);
 	document.getElementsByTagName("canvas")[0].setAttribute("width", x);
+	document.getElementById("can").style.display = "block";
+    document.body.style.cursor =  "url('https://experiment--brave-ride-4d3713.netlify.com/assets/img/pen.svg'), auto";
+
 }
 
-window.addEventListener("load", init, true);
 	
 var canvas, ctx, flag = false,
     prevX = 0,
@@ -125,3 +124,4 @@ function findxy(res, e) {
         }
     }
 }
+
