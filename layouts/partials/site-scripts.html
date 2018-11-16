@@ -3,10 +3,7 @@
 {{ $canvas := resources.Get "js/canvas.js" }}
 {{ $changeColor := resources.Get "js/changeColor.js" }}
 {{ $defaultJS := slice $menu $netlifyIdentity $canvas $changeColor | resources.Concat "js/global.js" }}
-{{ $globalJS := $defaultJS | resources.Fingerprint }}
-{{ if eq (getenv "HUGO_ENV") "production" }}
-    {{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint }}
-{{ end }}
+{{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint }}
 
 <script src="{{ $globalJS.Permalink }}"></script>
 
