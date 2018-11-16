@@ -6,6 +6,11 @@
     --templateColor: $red;
 } 
 
+::selection {
+	background-color: var(--templateColor);
+	color: white;
+}
+
 html, body {
     font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;   
     font-size:16px;

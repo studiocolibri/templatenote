@@ -1,6 +1,9 @@
 /*
 * MODULES
 */
+button:focus {
+  outline: none;
+}
 
 #canvas-button__img {
     transform-origin: 50%;
