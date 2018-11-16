@@ -2,11 +2,15 @@
 * BASE
 */
 
+:root {
+    --templateColor: $red;
+} 
+
 html, body {
     font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;   
     font-size:16px;
     font-weight:400;
-    color:$text-color;
+    color:var(--templateColor);
     min-height:100vh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -21,15 +25,13 @@ html, body {
 }
 
 body {
-    border:10px solid $red;
+    border:10px solid var(--templateColor);
     background:$white url(../assets/img/templatenote-bg.svg) repeat top center;
     background-attachment: fixed;
 
-@media (min-width:600px) {
-    border:15px solid $red;
-
+    @media (min-width:600px) {
+        border:15px solid var(--templateColor);
     } 
-
 }
 	
 .site-wrapper {

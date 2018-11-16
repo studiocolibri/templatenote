@@ -2,10 +2,8 @@
 * MODULES
 */
 
-#changeColor {
-    position: fixed;
-    top: 30px;
-	z-index: 10;
+#canvas-button__img {
+    transform-origin: 50%;
 }
 
 #canvas-button {
@@ -15,43 +13,53 @@
 	z-index:10;
 	width: 50px;
 	height: 50px;
-	background-color: $red;
+	background-color: var(--templateColor);
 	border: none;
 	
 	@media (max-width:768px) {
         display: none;
     }
 	
-	
+	&:hover, &:focus {
+        cursor: pointer;
+
+        #canvas-button__img {
+            transform:scale(1.1);
+        }
+    }
+
+    &:active {
+
+        #canvas-button__img {
+            transform:scale(1);
+        }
+    }
 }
 
+#canvas-container {
+    
+    @media (max-width:768px) {
+        display: none;
+    }
+}
+
+#can {
+	z-index:8;
+    position:absolute;
+    top:0;
+}
 
 #changeColor {
-	
 	position: fixed;
 	top: 136px;
 	left: 0px;
 	z-index:10;
 	width: 50px;
 	height: 50px;
-	background-color: $red;
+	background-color: var(--templateColor);
 	border: none;
 	border-radius: 0;
 	color: white;
-	
-}
-	
-
-
-#can {
-	z-index:8;
-    position:absolute;
-    top:0;
-	display: none;
-	
-	@media (max-width:768px) {
-        display: none;
-    }
 }
 
 .button {
@@ -59,10 +67,6 @@
     text-decoration: none;
     padding: 0.8em 1.9em;
     border: 1px solid currentColor;
-
-    &:hover, &:focus {
-        
-    }
 }
 
 .text-link {
@@ -70,55 +74,51 @@
     display: inline-block;
     position: relative;
     transition: 130ms color ease-out;
-	
-
-    &:hover, &:focus {
-        
-    }
 }
 
 .text-link--bigger {
-    text-decoration: none;
     display: inline-block;
     position: relative;
     transition: 130ms color ease-out;
 	@include f-ss;
-	color: $red;
+	color: var(--templateColor);
 	font-size: 0.85rem;
 	position: relative;
 	z-index: 9;
 	text-transform: uppercase;
-	
-	&:hover:after {
+    
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+    
+    &:hover:after, &:focus:after {
 		content:" →"
 	}
-	
-
-    &:hover, &:focus {
-        
-    }
 }
 
 .text-link--back {
-    text-decoration: none;
     display: inline-block;
     position: relative;
     transition: 130ms color ease-out;
 	@include f-ss;
-	color: $red;
+	color: var(--templateColor);
 	font-size: 0.85rem;
 	z-index: 9;
-	text-transform: uppercase;
-
+    text-transform: uppercase;
+    
     &:hover, &:focus {
-        
+        text-decoration: none;
+
+        &:before {
+            content:"← ";
+        }
     }
 }
 
 .rectangle-before {
     position:relative;
     padding:$su*2 $su/2;
-    border:1px solid $red;
+    border:1px solid var(--templateColor);
     background-color:$white;
 
     @media (min-width:600px) {
@@ -127,7 +127,7 @@
 
     @media (min-width:768px) {
         padding:4rem 4rem;
-		border:2px solid $red;
+		border:2px solid var(--templateColor);
 
     }
 
@@ -139,7 +139,7 @@
         width:100%;
         height:100%;
         background-color:$white;
-        border:1px solid $red;
+        border:1px solid var(--templateColor);
         top:0;
         right:0;
         bottom:0;
@@ -151,33 +151,28 @@
         }
 		
 		@media (min-width:768px) {
-		border:2px solid $red;
+		border:2px solid var(--templateColor);
 
     }
 			
     }
 }
 
-
 .img-offset {
 
-@media (min-width:400px) {
-            margin-bottom: -280px;
-
-        }
-
-
+    @media (min-width:400px) {
+        margin-bottom: -280px;
+    }
 }
 
 .img-wrapper {
     display:block;
 	position: relative;
-
     
     &:before {
         content: '';
         display: block;
-        background: $red;
+        background: var(--templateColor);
         width: 100%;
         height: 100%;
         position: absolute;
@@ -209,5 +204,19 @@
         height:auto;
 		mix-blend-mode: overlay;
     }  
+
+    &:hover, &:focus {
+        &:before {
+            display: none;
+        }
+        
+        &:after {
+            display: none;
+        }
+         
+        img {
+            mix-blend-mode: normal;
+        }  
+    }
 }
 

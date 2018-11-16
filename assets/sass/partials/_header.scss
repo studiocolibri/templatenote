@@ -51,7 +51,7 @@
     
     a {
         text-decoration:none;
-        color:$red;
+        color:var(--templateColor);
 
         &:hover {
             text-decoration: underline;
@@ -80,10 +80,10 @@
     width:57px;
     height:57px;
     border:none;
-    border-left:1px solid $red;
+    border-left:1px solid var(--templateColor);
     background:transparent;
     font-size: 1.5rem;
-    color: $red;
+    color: var(--templateColor);
     text-align: center;
 
     @media (min-width:320px) {
@@ -143,11 +143,11 @@
 
 .site-nav__list__item {
     list-style-type: none;
-    color:$red;
+    color:var(--templateColor);
 
     a {
         display:block;
-        color:$red;
+        color:var(--templateColor);
         text-decoration: none;
 		
         @include f-ss;

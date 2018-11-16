@@ -1,15 +1,12 @@
-{{ $canvas := resources.Get "js/canvas.js" }}
 {{ $menu := resources.Get "js/menu.js" }}
 {{ $netlifyIdentity := resources.Get "js/netlifyIdentity.js" }}
-{{ $defaultJS := slice $canvas $menu $netlifyIdentity | resources.Concat "js/global.js" }}
-{{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint }}
-<script src="{{ $globalJS.Permalink }}"></script>
-<script>
-function getColor() {
-    var newColor = document.getElementById("changeColor").value;
-    document.getElementById("demo").innerHTML = newColor;
-    document.documentElement.style.setProperty("--templateColor", newColor);
+{{ $canvas := resources.Get "js/canvas.js" }}
+{{ $changeColor := resources.Get "js/changeColor.js" }}
+{{ $defaultJS := slice $menu $netlifyIdentity $canvas $changeColor | resources.Concat "js/global.js" }}
+{{ $globalJS := $defaultJS | resources.Fingerprint }}
+{{ if eq (getenv "HUGO_ENV") "production" }}
+    {{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint }}
+{{ end }}
 
-}
-</script>
+<script src="{{ $globalJS.Permalink }}"></script>
 
