@@ -1,15 +1,13 @@
+// windowSize, initCanvas
+
 function windowSize() {
     var elmnt = document.body;
     var y = elmnt.scrollHeight;
     var x = elmnt.scrollWidth;
 	document.getElementsByTagName("canvas")[0].setAttribute("height", y);
 	document.getElementsByTagName("canvas")[0].setAttribute("width", x);
-	document.getElementById("can").style.display = "block";
-    document.body.style.cursor =  "url('https://experiment--brave-ride-4d3713.netlify.com/assets/img/pen.svg'), auto";
-
 }
 
-	
 var canvas, ctx, flag = false,
     prevX = 0,
     currX = 0,
@@ -20,7 +18,7 @@ var canvas, ctx, flag = false,
 var x = "black",
     y = 2;
 
-function init() {
+function initCanvas() {
     canvas = document.getElementById('can');
     ctx = canvas.getContext("2d");
     w = canvas.width;
@@ -125,3 +123,22 @@ function findxy(res, e) {
     }
 }
 
+function showCanvas() {
+    var canvasElement = document.getElementById("canvas-container");
+    if (canvasElement.style.display === "none") {
+        canvasElement.style.display = "block";
+        document.body.style.cursor =  "url('/assets/img/pen.svg'), auto";
+    } else {
+        canvasElement.style.display = "none";
+        document.body.style.cursor =  "auto";
+    }
+}
+
+var canvasBtn = document.getElementById("canvas-button");
+canvasBtn.addEventListener('click', drawCanvas);
+
+function drawCanvas() {
+    windowSize();
+    initCanvas();
+    showCanvas();
+}
