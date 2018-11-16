@@ -8,7 +8,7 @@
 
 #canvas-button {
 	position: fixed;
-	top: 66px;
+	top: 47px;
 	left: 0px;
 	z-index:10;
 	width: 50px;
@@ -49,17 +49,108 @@
     top:0;
 }
 
-#changeColor {
-	position: fixed;
-	top: 136px;
-	left: 0px;
-	z-index:10;
-	width: 50px;
-	height: 50px;
-	background-color: var(--templateColor);
-	border: none;
-	border-radius: 0;
-	color: white;
+.change-color-wrapper {
+
+    button {
+        transform-origin: 50%;
+
+        &:hover, &:focus {
+            cursor: pointer;
+            transform: scale(1.1);
+
+            #change-color-btn:after {
+                transform: scale(1.1);
+            }
+        }
+
+        &:active {
+            transform: scale(1);
+
+            #change-color-btn:after {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+#change-color-btn {
+    position:fixed;
+    left:0;
+    z-index:10;
+    width:50px;
+    height:50px;
+    background-color: var(--templateColor);
+    border: none;
+    display:flex;
+
+    &:after {
+        content:'';
+        display:none;
+        position:absolute;
+        width:2px;
+        height:32px;
+        background-color:white;
+        transform: rotate(-45deg);
+        top: 9px;
+        left: 25px;
+        pointer-events: none;
+    }
+
+    &.opened {
+        
+        &:after {
+            display:block;
+        }
+    }
+}
+
+#change-color-btn, #change-color-list {
+    top:126px;
+
+    @media screen and (min-width:400px) {
+        top:120px;
+    }
+
+    @media screen and (min-width:600px) {
+        top:163px;
+    }
+
+    @media screen and (min-width:768px) {
+        top:107px;
+    }
+}
+
+#change-color-btn__current {
+    display: block;
+    position:relative;
+    width:25px;
+    height:25px;
+    border:2px solid white;
+    border-radius: 50%;
+    margin:auto;
+    background-color: $red;
+}
+
+#change-color-list {
+    display:none;
+    position:fixed;
+    left:50px;
+    z-index:10;
+    width:50px;
+    background-color: var(--templateColor);
+    border: none;
+    flex-direction: column;
+    padding:8px 0;
+}
+
+.change-color-list__item {
+    display: block;
+    position:relative;
+    width:25px;
+    height:25px;
+    border:2px solid white;
+    border-radius: 50%;
+    margin:5px auto;
 }
 
 .button {
