@@ -1,7 +1,7 @@
 ---
 title: Nom du carnet 01
 slug: carnet01
-img: /assets/uploadsOut/photo-1530075288903-69b220251c3e.jpg
+img: /bhbzdbdz.jpg
 price: 25
 color: bleu
 size: 12cm x 20cm
