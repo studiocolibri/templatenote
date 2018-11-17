@@ -1,17 +1,25 @@
 {
-  "block01": {
-    "title": "titile01",
-    "description": "fefeffeaaffaaf",
-    "img": "/93BQg5.jpg"
-  },
-  "block02": {
-    "title": "title 02",
-    "description": "fojofpjppjzfa",
-    "img": "/kid-gohan.png"
-  },
-  "block03": {
-    "title": "title 03",
-    "description": "zafoaopfofja",
-    "img": "/dbu340.jpg"
-  }
+  "blocks": [
+    {
+      "block": {
+        "title": "title 01",
+        "description": "ffaefezfefz",
+        "img": "/175757.jpg"
+      }
+    },
+    {
+      "block": {
+        "title": "title 02",
+        "description": "ffaaazazf",
+        "img": "/dbu340.jpg"
+      }
+    },
+    {
+      "block": {
+        "title": "title 03",
+        "description": "ffaaazazf",
+        "img": "/dbu340.jpg"
+      }
+    }
+  ]
 }

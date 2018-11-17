@@ -34,31 +34,6 @@ collections:
         name: "about"
         file: "data/about.json"
         fields:
-          - label: Block 01
-            name: block01
-            widget: object
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Description, name: description, widget: markdown}
-              - {label: Image, name: img, widget: image}
-          - label: Block 02
-            name: block02
-            widget: object
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Description, name: description, widget: markdown}
-              - {label: Image, name: img, widget: image}
-          - label: Block 03
-            name: block03
-            widget: object
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Description, name: description, widget: markdown}
-              - {label: Image, name: img, widget: image}
-      - label: "Test"
-        name: "test"
-        file: "data/test.json"
-        fields:
           - label: Blocks
             name: blocks
             widget: list
@@ -67,7 +42,7 @@ collections:
                 name: block
                 widget: object
                 fields:
-                  - {label: Title, name: title, widget: string}
-                  - {label: Description, name: description, widget: markdown}
-                  - {label: Image, name: img, widget: image}
+                  - {label: Title, name: title, widget: string, required: false}
+                  - {label: Description, name: description, widget: markdown, required: false}
+                  - {label: Image, name: img, widget: image, required: false}
               
