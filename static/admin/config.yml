@@ -32,7 +32,7 @@ collections:
     files:
       - label: "About Page"
         name: "about"
-        file: "site/content/about.yml"
+        file: "content/about.yml"
         fields:
           - {label: Title 01, name: title-01, widget: string}
           - {label: Description 01, name: description-01, widget: markdown}
