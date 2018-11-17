@@ -32,8 +32,12 @@ collections:
     files:
       - label: "About Page"
         name: "about"
-        file: "data/about.yml"
+        file: "data/about.json"
         fields:
-          - {label: Title 01, name: title-01, widget: string}
-          - {label: Description 01, name: description-01, widget: markdown}
-          - {label: Image 01, name: img-01, widget: image}
+          - label: Block
+            name: block
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: markdown}
+              - {label: Image, name: img, widget: image}

@@ -1,3 +1,17 @@
 .playground article.single {
     min-height:750px;
 }
+
+body.about {
+
+    .section-blocks:nth-child(even) {
+
+        .section-block:nth-child(1) {
+            order: 2;
+        }
+
+        .section-block:nth-child(2) {
+            order: 1;
+        }
+    }
+}
