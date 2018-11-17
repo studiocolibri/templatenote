@@ -40,7 +40,7 @@ collections:
             fields:
               - label: Block
                 name: block
-                widget: list
+                widget: object
                 fields:
                   - {label: Title, name: title, widget: string}
                   - {label: Description, name: description, widget: markdown}
