@@ -1,7 +1,7 @@
 ---
 title: Nom du carnet 02
 slug: lien-vers-carnet-02
-img: /assets/uploadsOut/template-note-about.jpg
+img: /template-note-about.jpg
 price: 20
 color: rouge
 size: 15cm x 22cm
