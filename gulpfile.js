@@ -37,4 +37,11 @@ gulp.task('images', () =>
             upscale : false
           }))
         .pipe(gulp.dest('static/assets/uploadsOut'))
+        .pipe(gulpImageresize({
+            width : 287,
+            height : 287,
+            crop : true,
+            upscale : false
+          }))
+        .pipe(gulp.dest('static/assets/uploadsOutThumbs'))
 );
