@@ -21,6 +21,7 @@
     width:100%;
     list-style-type: none;
 	margin-bottom: $su*1.5;
+	z-index: 9;
 
     @media (min-width:320px) {
         width:100%;
@@ -32,12 +33,7 @@
 
     }
 	
-	& a {
-		text-decoration: none;
-		color: $text-color;
-	} 
-	
-	& h3 {
+	h3 {
 		margin-bottom: $su*0.8;
 	}  
 }

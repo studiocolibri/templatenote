@@ -1,0 +1,33 @@
+{{ define "main" }}
+    <article class="template-carnet-list block-mw rectangle-before">
+        <header class="page-header block-mw">
+            <h1>Liste des carnets :</h1>
+            {{/* 
+                <p>Variable testVarIndexMd : {{ .Params.TestVarIndexMd }}</p>
+            */}}
+        </header>
+        <section class="page-wrapper block-mw">
+            {{.Content}}
+            <br>
+           <ul class="shoplist">
+      {{ range .Pages }}
+        <li class="shoplist__item">
+          <a class="shoplist__item__img img-wrapper" href="{{ .Permalink }}">
+            <img src="{{ .Params.Img }}" alt="{{ .Title }}">
+          </a>
+          <h3 class="shoplist__item__title">
+            <a href="{{ .Permalink }}">
+              {{ .Title }}
+            </a>
+          </h3>
+          <p class="shoplist__item__description">
+            {{ .Content | truncate 45 }}
+          </p>
+        </li>
+      {{ end }}
+    </ul>
+            <br>
+            <a href="{{ .Site.BaseURL }}" class="text-link--back">Retour à la page d'accueil</a>
+        </section>
+    </article>
+{{ end }}

@@ -1,5 +1,5 @@
 ---
-testVarIndexMd: "contenu de testVarIndexMd"
+title: "Shop"
 ---
 
 Je suis la description générale des carnets.

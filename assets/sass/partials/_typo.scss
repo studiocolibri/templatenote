@@ -2,7 +2,7 @@ h1, h2, h3 {
     margin-bottom:0.25em;
     line-height:1.25;
     @include f-ss;
-    color:$red;
+    color:var(--templateColor);
     text-transform: uppercase;
 }
 
@@ -27,6 +27,14 @@ p, ul {
 }
 
 ul {
-//    margin-left:1em;
 	list-style-type: none;
 }
+
+a {
+    text-decoration: none;
+    color: var(--templateColor);
+    
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
+} 

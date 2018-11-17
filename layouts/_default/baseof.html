@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="{{ $.Site.LanguageCode }}">
+<html style="--templateColor:#F7858B;" lang="{{ $.Site.LanguageCode }}">
   <!-- Testing branch -->
   <head>
     <meta charset="utf-8">
     <meta name="language" content="{{ .Site.Language.Lang }}" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-   <!--    {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
-    <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>-->
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="robots" content="noindex, nofollow">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-	  <title>{{ .Site.Title}}</title>
+    {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
+    <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
     <meta name="author" content='{{ .Site.Params.Author }}'>
     <meta name="description" content='{{ .Site.Params.Description }}'>
    <!--  <meta property="og:type" content="website">
@@ -19,16 +20,18 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:description" content='Utiliser des technologies modernes pour construire un web plus rapide, plus sécurisé et plus écologique.'>
     <meta property="og:site_name" content="Studio Colibri"> -->
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="robots" content="noindex, nofollow">
+
     {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
+    
     {{ partial "site-favicon.html" . }}
+    
     {{- template "_internal/schema.html" . -}}
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
-
-  <body>
+	<body>
+    
     <div class="site-wrapper">
         {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
         <main role="main">
@@ -36,6 +39,9 @@
         </main>
         {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
     </div>
+
+    {{ partial "site-canvas.html" . }}
+    
     {{ block "scripts" . }}{{ partial "site-scripts.html" . }}{{ end }}
   </body>
 </html>

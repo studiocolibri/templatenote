@@ -1,5 +1,9 @@
 {{ $menu := resources.Get "js/menu.js" }}
 {{ $netlifyIdentity := resources.Get "js/netlifyIdentity.js" }}
-{{ $defaultJS := slice $menu $netlifyIdentity | resources.Concat "js/global.js" }}
+{{ $canvas := resources.Get "js/canvas.js" }}
+{{ $changeColor := resources.Get "js/changeColor.js" }}
+{{ $defaultJS := slice $menu $netlifyIdentity $canvas $changeColor | resources.Concat "js/global.js" }}
 {{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint }}
+
 <script src="{{ $globalJS.Permalink }}"></script>
+
