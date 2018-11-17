@@ -55,4 +55,15 @@ collections:
               - {label: Title, name: title, widget: string}
               - {label: Description, name: description, widget: markdown}
               - {label: Image, name: img, widget: image}
+    - label: "Test"
+        name: "test"
+        file: "data/test.json"
+        fields:
+          - label: Blocks
+            name: block
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: markdown}
+              - {label: Image, name: img, widget: image}
               
