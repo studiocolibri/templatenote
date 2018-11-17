@@ -253,8 +253,9 @@ button:focus {
 }
 
 .img-offset {
-
-    @media (min-width:400px) {
+    margin-bottom: -110px;
+    
+    @media (min-width:768px) {
         margin-bottom: -280px;
     }
 }

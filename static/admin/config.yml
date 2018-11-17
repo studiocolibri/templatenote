@@ -6,9 +6,9 @@ media_folder: "static/assets/uploads"
 public_folder: "/assets/uploadsOut"
 
 collections:
-  - name: "carnet" # Used in routes, e.g., /admin/collections/blog
+  - name: "shop" # Used in routes, e.g., /admin/collections/blog
     label: "Carnets" # Used in the UI
-    folder: "content/carnet" # The path to the folder where the documents are stored
+    folder: "content/shop" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
