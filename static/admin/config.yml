@@ -34,22 +34,22 @@ collections:
         name: "about"
         file: "data/about.json"
         fields:
-          - label: Block
-            name: block
+          - label: Block 01
+            name: block01
             widget: object
             fields:
               - {label: Title, name: title, widget: string}
               - {label: Description, name: description, widget: markdown}
               - {label: Image, name: img, widget: image}
-          - label: Block
-            name: block
+          - label: Block 02
+            name: block02
             widget: object
             fields:
               - {label: Title, name: title, widget: string}
               - {label: Description, name: description, widget: markdown}
               - {label: Image, name: img, widget: image}
-          - label: Block
-            name: block
+          - label: Block 03
+            name: block03
             widget: object
             fields:
               - {label: Title, name: title, widget: string}
