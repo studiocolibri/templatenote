@@ -4,9 +4,9 @@
   </button>
   {{ block "change-color" . }}{{ partial "change-color.html" .}}{{ end }}
   <div class="site-header__wrapper">
-    <h1 class="site-title">
+    <h2 class="site-title">
       <a href="{{ .Site.BaseURL }}">TemplateNote</a><br>
-    </h1>
+    </h2>
     <p class="site-description">We create unique Notebooks & Notepads using only <strong>excess paper</strong></p>
     {{ block "nav" . }}{{ partial "site-navigation.html" .}}{{ end }}
   </div>

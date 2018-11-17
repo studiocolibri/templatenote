@@ -39,6 +39,9 @@
     margin-bottom:0;   
     padding:0.65em 0; 
     margin-right:$su/2;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
 
     @media (min-width:600px) {
         padding:$su 0;
@@ -48,6 +51,8 @@
         padding:0 0 $su/4 0;
         font-size: 1.7em;
         width:100%;
+        position: static;
+        transform: none;
     }
     
     a {
