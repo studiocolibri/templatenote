@@ -2,6 +2,7 @@
 title: "Contact"
 type: "static"
 url: "contact"
+class: "contact"
 ---
 
 [Instagram](https://www.instagram.com/templatenote/)

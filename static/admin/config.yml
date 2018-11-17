@@ -26,3 +26,14 @@ collections:
       - {label: "Tags", name: "tags", widget: "list", allow_add: true, required: false }
       - {label: "Mis en avant ?", name: "featured", widget: "select", options: ["non", "oui"] }
       - {label: "Description", name: "body", widget: "markdown"}
+
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "site/content/about.yml"
+        fields:
+          - {label: Title 01, name: title-01, widget: string}
+          - {label: Description 01, name: description-01, widget: markdown}
+          - {label: Image 01, name: img-01, widget: image}

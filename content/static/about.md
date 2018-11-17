@@ -2,6 +2,7 @@
 title: "About"
 type: "static"
 url: "about"
+class: "about"
 ---
 
 <div class="section-blocks">

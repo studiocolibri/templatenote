@@ -1,5 +1,6 @@
 ---
 title: "Shop"
+class: "shop"
 ---
 
 Je suis la description générale des carnets.
