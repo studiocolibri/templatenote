@@ -1,17 +1,19 @@
 {
-  "block01" : {
-    "title" : "title 01",
-    "description" : "hfeofhozohffo",
-    "img" : "hfiofh"
-  },
-  "block02" : {
-    "title" : "title 02",
-    "description" : "hfeofhozohffo",
-    "img" : "hfiofh"
-  },
-  "block03" : {
-    "title" : "title 03",
-    "description" : "hfeofhozohffo",
-    "img" : "hfiofh"
-  }
+  "block": [
+    {
+      "title": "title 01",
+      "description": "fzaopfufpfa",
+      "img": "/assets/uploadsOut/175757.jpg"
+    },
+    {
+      "title": "title 02",
+      "description": "feafofjajfopjpfao",
+      "img": "/assets/uploadsOut/kid-gohan.png"
+    },
+    {
+      "title": "title 03",
+      "description": "zajdppajpfpafpafpa",
+      "img": "/assets/uploadsOut/dbu340.jpg"
+    }
+  ]
 }
