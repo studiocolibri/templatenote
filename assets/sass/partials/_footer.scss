@@ -3,7 +3,6 @@
 */
 
 .site-footer {
-    margin-top:$su*4;
     padding-top:$su;
     padding-bottom:$su;
 	position: relative;
@@ -26,7 +25,12 @@
         width:100%;
     }
 
-    @media (min-width:768px) {
+    @media (min-width:720px) {
+        width:50%;
+		margin-bottom: 0;
+    }
+
+    @media (min-width:980px) {
         width:30%;
 		margin-bottom: 0;
     }

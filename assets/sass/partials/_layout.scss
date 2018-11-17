@@ -1,10 +1,27 @@
 
 
 .page-section {
-    margin-bottom:$su*6;
+    margin-bottom:$su*3;
+
+    @media screen and (min-width:768px) {
+        margin-bottom:$su*6;
+    }
 
     h2 {
         margin-bottom: 1em;
+    }
+}
+
+article.single, article.list {
+    margin-bottom:$su*1.5;
+
+    @media screen and (min-width:600px) {
+        margin-bottom:$su*3;
+    }
+
+    @media screen and (min-width:768px) {
+        margin-top:$su*5;
+        margin-bottom:$su*6;
     }
 }
 
@@ -43,7 +60,7 @@
         margin-bottom:$su*2;
     }
 
-    @media (min-width:768px) {
+    @media (min-width:960px) {
         width:50%;
     }
 
@@ -62,7 +79,7 @@
         margin-bottom:$su*2;
         max-width:32em;
 
-        @media (min-width:768px) {
+        @media (min-width:960px) {
             margin-bottom:0;
         }
     }

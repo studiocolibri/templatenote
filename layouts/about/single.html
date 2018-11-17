@@ -4,17 +4,17 @@
             <h1>{{.Title}}</h1>
         </header>
         <section class="page-wrapper">
-            {{ range .Site.Data.about }}
+            {{ range .Site.Data.about.blocks }}
                 <div class="section-blocks">
                     <div class="section-block">
-                        <h2>{{ .title }}</h2>
-                        <p>{{ .description }}</p>
+                        <h2>{{ .block.title }}</h2>
+                        <p>{{ .block.description }}</p>
                     </div>
                     <div class="section-block">
                         <picture class="img-wrapper">
-                            <source srcset="/assets/uploadsOut{{ .img }}"
+                            <source srcset="/assets/uploadsOut{{ .block.img }}"
                                     media="(min-width: 768px)">
-                            <img src="/assets/uploadsOutThumbs{{ .img }}" alt="{{ .title }}" />
+                            <img src="/assets/uploadsOutThumbs{{ .block.img }}" alt="{{ .title }}" />
                         </picture>
                     </div>
                 </div>

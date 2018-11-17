@@ -80,23 +80,34 @@ button:focus {
     position:fixed;
     left:0;
     z-index:10;
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
     background-color: var(--templateColor);
     border: none;
     display:flex;
+
+    @media screen and (min-width:600px) {
+        width:50px;
+        height:50px;
+    }
 
     &:after {
         content:'';
         display:none;
         position:absolute;
         width:2px;
-        height:27px;
+        height:25px;
         background-color:white;
         transform: rotate(-45deg);
-        top: 12px;
-        left: 24px;
+        top: 8px;
+        left: 19px;
         pointer-events: none;
+
+        @media screen and (min-width:600px) {
+            height:27px;
+            top: 12px;
+            left: 24px;
+        }
     }
 
     &.opened {
@@ -108,15 +119,7 @@ button:focus {
 }
 
 #change-color-btn, #change-color-list {
-    top:126px;
-
-    @media screen and (min-width:400px) {
-        top:120px;
-    }
-
-    @media screen and (min-width:600px) {
-        top:163px;
-    }
+    top:0;
 
     @media screen and (min-width:768px) {
         top:107px;
@@ -138,13 +141,17 @@ button:focus {
 #change-color-list {
     display:none;
     position:fixed;
-    left:50px;
+    left:40px;
     z-index:10;
     width:50px;
     background-color: var(--templateColor);
     border: none;
     flex-direction: column;
     padding:8px 0;
+
+    @media screen and (min-width:768px) {
+        left:50px;
+    }
 }
 
 .change-color-list__item {
@@ -224,18 +231,13 @@ button:focus {
 
 .rectangle-before {
     position:relative;
-    padding:$su*2 $su/2;
+    padding:$su*2 $su*2;
     border:1px solid var(--templateColor);
     background-color:$white;
-
-    @media (min-width:600px) {
-        padding:2rem $su;
-    }
 
     @media (min-width:768px) {
         padding:4rem 4rem;
 		border:2px solid var(--templateColor);
-
     }
 
     &:before {
@@ -266,7 +268,7 @@ button:focus {
 }
 
 .img-offset {
-    margin-bottom: -110px;
+    margin-bottom: -70px;
     
     @media (min-width:768px) {
         margin-bottom: -130px;
@@ -310,7 +312,8 @@ button:focus {
         position:relative;
         width:100%;
         height:auto;
-		mix-blend-mode: overlay;
+        filter: saturate(0);
+        mix-blend-mode: overlay;
     }  
 
     &:hover, &:focus {
@@ -323,6 +326,7 @@ button:focus {
         }
          
         img {
+            filter:none;
             mix-blend-mode: normal;
         }  
     }
