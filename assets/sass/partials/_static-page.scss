@@ -4,14 +4,22 @@
 
 body.about {
 
-    .section-blocks:nth-child(even) {
+    @media (min-width:768px) {
+        
+        .section-blocks:nth-child(even) {
 
-        .section-block:nth-child(1) {
-            order: 2;
+            .section-block:nth-child(1) {
+                order: 2;
+                padding-left:$su*3;
+            }
+    
+            .section-block:nth-child(2) {
+                order: 1;
+            }
         }
-
-        .section-block:nth-child(2) {
-            order: 1;
+    
+        .section-block:nth-child(1) {
+            padding:$su*3 $su*3 $su*3 0;
         }
     }
 }

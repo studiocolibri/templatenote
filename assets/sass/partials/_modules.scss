@@ -179,16 +179,23 @@ button:focus {
 	color: var(--templateColor);
 	font-size: 0.85rem;
 	position: relative;
-	//z-index: 9;
-	text-transform: uppercase;
+    text-transform: uppercase;
+    margin-top:$su;
     
+    &:after {
+        content:"→";
+        display: inline-block;
+        margin-left:0.5em;
+    }
+
     &:hover, &:focus {
         text-decoration: none;
+
+        &:after {
+            transform:translateX(0.2em);
+        }
     }
     
-    &:hover:after, &:focus:after {
-		content:" →"
-	}
 }
 
 .text-link--back {
@@ -198,14 +205,19 @@ button:focus {
 	@include f-ss;
 	color: var(--templateColor);
 	font-size: 0.85rem;
-	//z-index: 9;
     text-transform: uppercase;
+    
+    &:before {
+        content:"←";
+        display: inline-block;
+        margin-right:0.5em;
+    }
     
     &:hover, &:focus {
         text-decoration: none;
 
         &:before {
-            content:"← ";
+            transform: translateX(-0.2em);
         }
     }
 }
@@ -257,7 +269,7 @@ button:focus {
     margin-bottom: -110px;
     
     @media (min-width:768px) {
-        margin-bottom: -280px;
+        margin-bottom: -130px;
     }
 }
 

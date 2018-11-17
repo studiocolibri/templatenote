@@ -21,7 +21,7 @@ h3 {
 }
 
 p, ul {
-    margin-bottom:0.25em;
+    margin-bottom:1em;
     line-height:1.6;
 	font-size: 18px;
 }
@@ -38,3 +38,7 @@ a {
         text-decoration: underline;
     }
 } 
+
+main strong {
+    font-weight: bold;
+}

@@ -1,14 +1,15 @@
 {{ define "main" }}
   <section class="page-section block-mw rectangle-before">
-    <div class="section-blocks">
+    <div class="section-blocks section-blocks--no-margin">
       <div class="section-block">
         <h2>About</h2>
-        <p>Notebooks & Notepads - RISO Printed in Brussels - Limited editions - Hand drawn patterns  - All from paper surplus. </p><br>
-		  <a href="/about" class="text-link--bigger">MORE INFO</a>
+        <p>{{ .Site.Params.description }}</p>
+        <p>Template Note helps you get over your creative’s block. Our entire website is your playground, Get creative!</p>
+		    <p><a href="/about" class="text-link--bigger">MORE INFO</a></p>
       </div>
       <div class="section-block section-block--no-margin-top">
         <div class="img-wrapper img-offset">
-          <img src="assets/uploadsOut/template-note-about.jpg" >
+          <img src="assets/uploadsOut/template-note-about.jpg" alt="{{ .Site.Params.description }}">
         </div>
       </div>
     </div>

@@ -18,6 +18,10 @@
         width: 30%;
         margin-bottom:$su*4;
     }
+
+    &:hover {
+        transform:translate(5px, -5px);
+    }
 }
 
 .shoplist__item--view-all {
@@ -30,7 +34,7 @@
 }
 
 .shoplist__item__img {
-    
+
     img {
         width:100%;
     }

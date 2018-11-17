@@ -11,7 +11,11 @@
                         <p>{{ .description }}</p>
                     </div>
                     <div class="section-block">
-                        <img src="{{ .img }}" />
+                        <picture class="img-wrapper">
+                            <source srcset="/assets/uploadsOut{{ .img }}"
+                                    media="(min-width: 768px)">
+                            <img src="/assets/uploadsOutThumbs{{ .img }}" alt="{{ .title }}" />
+                        </picture>
                     </div>
                 </div>
             {{end}}

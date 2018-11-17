@@ -13,7 +13,7 @@
       {{ range .Pages }}
         <li class="shoplist__item">
           <a class="shoplist__item__img img-wrapper" href="{{ .Permalink }}">
-            <img src="{{ .Params.Img }}" alt="{{ .Title }}">
+            <img src="/assets/uploadsOutThumbs{{ .Params.Img }}" alt="{{ .Title }}">
           </a>
           <h3 class="shoplist__item__title">
             <a href="{{ .Permalink }}">
