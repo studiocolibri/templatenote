@@ -91,11 +91,11 @@ button:focus {
         display:none;
         position:absolute;
         width:2px;
-        height:32px;
+        height:27px;
         background-color:white;
         transform: rotate(-45deg);
-        top: 9px;
-        left: 25px;
+        top: 12px;
+        left: 24px;
         pointer-events: none;
     }
 
@@ -126,8 +126,9 @@ button:focus {
 #change-color-btn__current {
     display: block;
     position:relative;
-    width:25px;
-    height:25px;
+    width:20px;
+    height:20px;
+    margin-left:18px;
     border:2px solid white;
     border-radius: 50%;
     margin:auto;
@@ -178,7 +179,7 @@ button:focus {
 	color: var(--templateColor);
 	font-size: 0.85rem;
 	position: relative;
-	z-index: 9;
+	//z-index: 9;
 	text-transform: uppercase;
     
     &:hover, &:focus {
@@ -197,7 +198,7 @@ button:focus {
 	@include f-ss;
 	color: var(--templateColor);
 	font-size: 0.85rem;
-	z-index: 9;
+	//z-index: 9;
     text-transform: uppercase;
     
     &:hover, &:focus {
