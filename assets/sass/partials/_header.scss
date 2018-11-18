@@ -44,7 +44,7 @@
     transform:translateY(-50%);
 
     body.nav-opened & {
-        position:normal;
+        position:static;
         transform:none;
     }
 
