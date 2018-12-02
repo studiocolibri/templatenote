@@ -1,8 +1,8 @@
 ---
 title: "Our Partners"
-type: "about"
+type: "static"
 url: "partners"
 class: "partners"
-data_file: about
 ---
 
+Lol
