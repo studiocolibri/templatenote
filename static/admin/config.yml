@@ -23,7 +23,7 @@ collections:
       - {label: "Info 01", name: "info_01", widget: "string", required: false}
       - {label: "Info 02", name: "info_02", widget: "string", required: false}
       - {label: "Info 03", name: "info_03", widget: "string", required: false}
-      - {label: "Lien URL", name: "url", widget: "string"}
+      - {label: "Lien URL", name: "external_url", widget: "string"}
 
   - label: "Pages"
     name: "pages"
