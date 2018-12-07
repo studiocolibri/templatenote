@@ -143,12 +143,30 @@ function replaceBtnImg() {
     }
 }
 
+var pickUp = document.getElementById('pick-up'),
+    pickUpState;
+
+function getPickUpState() {
+    if (!sessionStorage.pickUp) {
+        console.log('pickup is not set');
+        pickUp.classList.add('visible');
+    }
+}
+
+function setPickUpState() {
+    pickUp.classList.remove('visible');
+    sessionStorage.setItem("pickUp", true);
+}
+
 function drawCanvas() {
     windowSize();
     initCanvas();
     showCanvas();
     replaceBtnImg();
+    setPickUpState();    
 }
+
+getPickUpState();
 
 var canvasBtn = document.getElementById("canvas-button");
 canvasBtn.addEventListener('click', drawCanvas);

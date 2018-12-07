@@ -87,14 +87,6 @@ article.single, article.list {
     &--no-margin-top {
         margin-top:0;
     }
-	
-	p {
-		padding-right:1em;
-
-        @media (min-width:1024px) {
-            padding-right:4em;
-        }
-	}
 
 }
 

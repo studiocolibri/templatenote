@@ -39,6 +39,10 @@ a {
     }
 } 
 
-main strong {
+.text-underline {
+    text-decoration: underline;
+}
+
+main strong, #pick-up strong {
     font-weight: bold;
 }

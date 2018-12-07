@@ -2,3 +2,20 @@
 * HOMEPAGE
 */
 
+.home-about {
+
+    p, h2 {
+        margin-bottom:$su*1.5;
+    }
+
+    a {
+        margin: 0 $su/2 $su/2 0;
+    }
+
+    @media screen and (min-width:960px) {
+        
+        p, h2 {
+            padding-right:$su;
+        }
+    }
+}

@@ -1,8 +1,8 @@
 ---
 title: "Process"
-type: "about"
+type: "process"
 url: "process"
-class: "process"
+class: "static process"
 data_file: process
 ---
 

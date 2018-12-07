@@ -5,27 +5,25 @@ backend:
 media_folder: "static/assets/uploads"
 public_folder: "/"
 
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
 collections:
   - name: "shop" # Used in routes, e.g., /admin/collections/blog
     label: "Carnets" # Used in the UI
     folder: "content/shop" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}_{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
+      - {label: "Cat", name: "cat", widget: "hidden", default: "shopItem"}
+      - {label: "Publié ?", name: "published", widget: "boolean", default: false}
       - {label: "Titre", name: "title", widget: "string"}
-      - {label: "Lien URL", name: "slug", widget: "string"}
       - {label: "Image", name: "img", widget: "image"}
-      - {label: "Prix", name: "price", widget: "number", valueType: "int"}
-      - {label: "Couleur", name: "color", widget: "string"}
-      - {label: "Format", name: "size", widget: "string"}
-      - {label: "Nbr de pages", name: "pages", widget: "number", valueType: "int"}
-      - {label: "Type de papier", name: "paper", widget: "string"}
-      - {label: "Motif", name: "pattern", widget: "string"}
-      - {label: "Reliure", name: "binding", widget: "string"}
-      - {label: "Imprimeur", name: "print", widget: "string", required: false}
-      - {label: "Tags", name: "tags", widget: "list", allow_add: true, required: false }
-      - {label: "Mis en avant ?", name: "featured", widget: "select", options: ["non", "oui"] }
-      - {label: "Description", name: "body", widget: "markdown"}
+      - {label: "Info 01", name: "info_01", widget: "string", required: false}
+      - {label: "Info 02", name: "info_02", widget: "string", required: false}
+      - {label: "Info 03", name: "info_03", widget: "string", required: false}
+      - {label: "Lien URL", name: "url", widget: "string"}
 
   - label: "Pages"
     name: "pages"
@@ -33,6 +31,21 @@ collections:
       - label: "About Page"
         name: "about"
         file: "data/about.json"
+        fields:
+          - label: Blocks
+            name: blocks
+            widget: list
+            fields:
+              - label: Block
+                name: block
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string, required: false}
+                  - {label: Description, name: description, widget: markdown, required: false}
+                  - {label: Image, name: img, widget: image, required: false}
+      - label: "Process Page"
+        name: "process"
+        file: "data/process.json"
         fields:
           - label: Blocks
             name: blocks
