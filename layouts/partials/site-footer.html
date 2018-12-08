@@ -2,7 +2,7 @@
 	<section class="page-section rectangle-before">
 		<ul class="footer-content">
 			<li class="footer-content__item">
-				<h3 class="shoplist__item__title">TEMPLATE NOTE</h3>
+				<h3 class="shoplist__item__title">Template Note</h3>
 				<ul>
 					<li>Nastasia Anzad</li>
 					<li><a href="mailto:info@templatenote.com">info@templatenote.com</a></li>
@@ -11,23 +11,22 @@
 				</ul>
       </li> 
 			<li class="footer-content__item">
-        <h3 class="shoplist__item__title">OUR COLLECTION</h3>
+        <h3 class="shoplist__item__title">Our collection</h3>
       	<ul>
-					{{ range where .Site.Pages "Params.featured" "oui" }}
+					{{ range where .Site.Pages "Params.cat" "shopItem" }}
 						<li>
-							<a href="{{ .Permalink }}">{{ .Title }}
+							<a href="{{ .Params.external_url }}">{{ .Title }}
 							</a>
 						</li>
 					{{ end }}
     		</ul>
       </li> 
 			<li class="footer-content__item">
-        <h3 class="shoplist__item__title">FOLLOW US</h3>
+        <h3 class="shoplist__item__title">Follow us</h3>
 				<ul>
 					<li><a href="https://tictail.com/templatenote">Shop Tictail</a></li>
 					<li><a href="https://www.instagram.com/templatenote/">Instagram</a></li>
 					<li><a href="https://www.facebook.com/TemplateNote/">Facebook</a></li>
-					<li><a href="#">Mail</a></li>
 				</ul>
 			</li>
 		</ul>
