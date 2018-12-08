@@ -53,3 +53,57 @@ body.static {
         }
     }
 }
+
+.partners-thanks {
+    max-width:440px;
+    margin-top:$su*2;
+    margin-bottom: $su;
+
+    @media screen and (min-width:960px) {
+        margin-top:$su*3;
+        margin-bottom: $su*2;
+    }
+    
+}
+
+.partners-list {
+
+    @media (min-width:960px) {
+        
+        .section-block:nth-child(even) {
+
+            .img-wrapper {
+                margin-left:5%;
+            }
+        }
+    }
+
+    .img-wrapper {
+        max-width:95%;
+    }
+
+    h2 {
+        margin-top: $su;
+        text-align: center;
+
+        small {
+            font-size:0.7em;
+        }
+    }
+}
+
+.become-partner {
+    margin-top:$su*2;
+
+    .text-align-right {
+        text-align: center;
+    }
+
+    @media screen and (min-width:960px) {
+        margin-top:$su*4;
+
+        .text-align-right {
+            text-align: right;
+        }
+    }
+}

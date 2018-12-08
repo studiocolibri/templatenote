@@ -39,10 +39,14 @@ a {
     }
 } 
 
+main strong, #pick-up strong {
+    font-weight: bold;
+}
+
 .text-underline {
     text-decoration: underline;
 }
 
-main strong, #pick-up strong {
-    font-weight: bold;
+.text-align-right{
+    text-align: right;
 }
