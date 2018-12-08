@@ -4,6 +4,18 @@
 
 body.static {
 
+    .section-blocks {
+        margin-bottom:$su*4;
+    }
+
+    .section-block {
+        margin:0;
+
+        @media (min-width:600px) {
+            margin:0;
+        }
+    }
+
     @media (min-width:960px) {
 
         .section-blocks {
@@ -11,7 +23,7 @@ body.static {
         }
 
         .section-block {
-            padding:0 $su;
+            padding:0;
 
             .img-wrapper {
                 width:90%;
