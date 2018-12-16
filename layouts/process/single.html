@@ -8,7 +8,7 @@
                 <div class="section-blocks">
                     <div class="section-block">
                         <h2>{{ .block.title }}</h2>
-                        <p>{{ .block.description }}</p>
+                        <p>{{ .block.description | markdownify }}</p>
                     </div>
                     <div class="section-block">
                         <picture class="img-wrapper" onclick="">
