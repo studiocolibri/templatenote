@@ -69,7 +69,9 @@ button:focus {
 }
 
 #canvas-container {
-    
+    display:flex;
+    justify-content: center;
+
     @media (max-width:768px) {
         display: none;
     }
@@ -79,6 +81,64 @@ button:focus {
 	z-index:8;
     position:absolute;
     top:0;
+    left: 0;
+    right:0;
+    bottom:0;
+}
+
+#canvas-save-btn {
+    position: fixed;
+    top: 20px;
+    text-align: center;
+    display: block;
+    background: $white;
+    z-index: 10;
+    color: var(--templateColor);
+    font-size: 1rem;
+    padding: 0.45em 1.25em;
+
+    &:hover, &:focus {
+        background-color: var(--templateColor);
+        color:$white;
+    }
+}
+
+#canvas-close-btn {
+    position: absolute;
+    top: 30px;
+    right: 9.5%;
+    transform:scale(0);
+    animation: showCloseBtn 300ms 150ms ease-out forwards;
+}
+
+@keyframes showCloseBtn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#canvas-generated {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80% !important;
+    height: auto !important;
+    box-shadow: 0 0 15px #999;
+    margin: 40px 0 40px -30%;
+    transform: translateX(50%) scale(0);
+    animation: showGeneratedCanvas 300ms ease-out forwards;
+}
+
+@keyframes showGeneratedCanvas {
+    0% {
+        transform: translateX(50%) scale(0);
+    }
+    100% {
+        transform: translateX(50%) scale(1);
+    }
 }
 
 .change-color-wrapper {
@@ -158,8 +218,9 @@ button:focus {
 #change-color-btn__current {
     display: block;
     position:relative;
+    flex: 0 0 20px;
     width:20px;
-    height:20px;
+    height: 20px;
     margin-left:18px;
     border:2px solid white;
     border-radius: 50%;
@@ -197,7 +258,8 @@ button:focus {
     display:inline-block;
     text-decoration: none;
     padding: 0.9em;
-    border: 2px solid currentColor;
+    color: var(--templateColor);
+    border: 2px solid var(--templateColor);
     font-weight: bold;
     line-height:1;
     background-color:$white;
@@ -208,6 +270,7 @@ button:focus {
         background-color:var(--templateColor);
         color:$white;
         text-decoration: none;
+        cursor:pointer;
     }
 
     &:active {

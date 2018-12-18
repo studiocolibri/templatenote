@@ -85,13 +85,6 @@ function erase() {
     }
 }
 
-function save() {
-    document.getElementById("can").style.border = "2px solid";
-    var dataURL = canvas.toDataURL();
-    document.getElementById("can").src = dataURL;
-    document.getElementById("can").style.display = "inline";
-}
-
 function findxy(res, e) {
     if (res == 'down') {
         prevX = currX;
@@ -123,14 +116,25 @@ function findxy(res, e) {
     }
 }
 
-function showCanvas() {
-    var canvasElement = document.getElementById("canvas-container");
+function showCanvas(el) {
+    el.style.display = "flex";
+    document.body.style.cursor =  "url('/assets/img/pen.svg'), auto";
+}
+
+function hideCanvas(el) {
+    var saveBtn = document.getElementById("canvas-save-btn");
+    if (saveBtn) {
+        el.removeChild(saveBtn);
+    }
+    el.style.display = "none";
+    document.body.style.cursor =  "auto";
+}
+
+function toggleCanvas() {
     if (canvasElement.style.display === "none") {
-        canvasElement.style.display = "block";
-        document.body.style.cursor =  "url('/assets/img/pen.svg'), auto";
+        showCanvas(canvasElement);
     } else {
-        canvasElement.style.display = "none";
-        document.body.style.cursor =  "auto";
+        hideCanvas(canvasElement);
     }
 }
 
@@ -157,16 +161,64 @@ function setPickUpState() {
     pickUp.classList.remove('visible');
     sessionStorage.setItem("pickUp", true);
 }
+function closeGeneratedCanvas() {
+    var generatedCanvas = document.getElementById('canvas-generated');
+    var closeGeneratedCanvasBtn = document.getElementById('canvas-close-btn');
+    document.body.removeChild(generatedCanvas);
+    document.body.removeChild(closeGeneratedCanvasBtn);
+}
+
+function drawCloseGeneratedCanvasBtn() {
+    var closeBtn = document.createElement("button");
+    var closeBtnTxt = document.createTextNode("X");
+    closeBtn.appendChild(closeBtnTxt);
+    closeBtn.classList.add('button');
+    closeBtn.id = "canvas-close-btn";
+    document.body.appendChild(closeBtn);
+    closeBtn.addEventListener('click', closeGeneratedCanvas);
+}
+
+function takeScreenshot() {
+    var saveBtn = document.getElementById("canvas-save-btn");
+    canvasElement.removeChild(saveBtn);
+    var w = window.innerWidth;
+    var h = document.body.clientHeight;
+
+    html2canvas(document.body,{width:w, height:h}).then(function(canvas) {
+        canvas.id = "canvas-generated";
+        document.body.appendChild(canvas);
+        hideCanvas(canvasElement);
+        replaceBtnImg();
+        drawCloseGeneratedCanvasBtn();
+    });
+}
+
+function toggleSaveBtn() {
+    if (canvasElement.style.display != "none") {
+        var saveBtn = document.createElement("button");
+        var saveBtnTxt = document.createTextNode("Save");
+        saveBtn.appendChild(saveBtnTxt);
+        saveBtn.classList.add('button');
+        saveBtn.id = "canvas-save-btn";
+        canvasElement.appendChild(saveBtn);
+        saveBtn.addEventListener('click', takeScreenshot);
+    } else {
+        var saveBtn = document.getElementById("canvas-save-btn");
+        canvasElement.removeChild(saveBtn);
+    }
+}
 
 function drawCanvas() {
     windowSize();
     initCanvas();
-    showCanvas();
+    toggleCanvas();
     replaceBtnImg();
-    setPickUpState();    
+    setPickUpState();  
+    toggleSaveBtn();  
 }
 
 getPickUpState();
 
+var canvasElement = document.getElementById("canvas-container");
 var canvasBtn = document.getElementById("canvas-button");
 canvasBtn.addEventListener('click', drawCanvas);
