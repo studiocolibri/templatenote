@@ -10,8 +10,8 @@ button:focus {
     position: fixed;
     background: transparent;
     padding: 0.6em;
-    top: 410px;
-    left: 47px;
+    top: 472px;
+    left: 46px;
     
     transform-origin: left bottom;
     transform: rotate(-90deg);
@@ -26,16 +26,11 @@ button:focus {
     h3 {
         margin-bottom:0;
         line-height:1;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     @media screen and (min-width:1240px) {
-        top: 480px;
-        left: 57px;
-
-        h3 {
-            font-size: inherit;
-        }
+        left: 52px;
     }
 }
 
