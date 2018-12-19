@@ -150,7 +150,7 @@
     margin:0;
     display:none;
 
-    @media (min-width:768px) {
+    @media screen and (min-width:768px) {
         display:block;
 		line-height: 1.65em;
     }
@@ -186,15 +186,12 @@
         }
     }
 
-    /*&:last-child {
+    &.playground {
+        display:none;
 
-        a {
-            padding-bottom: $su/2;
-
-            @media (min-width:768px) {
-//                padding-bottom: $su;
-            }
+        @media screen and (min-width:768px) {
+            display:block;
         }
-    }*/
+    }
 }
 
