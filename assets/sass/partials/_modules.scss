@@ -173,6 +173,9 @@ button:focus {
   height: 40px;
   background-color: var(--templateColor);
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media screen and (min-width: 600px) {
     width: 50px;
@@ -217,17 +220,14 @@ button:focus {
 #change-color-btn__current {
   display: block;
   position: relative;
+  flex: 0 0 20px;
   width: 20px;
   height: 20px;
   margin-left: 18px;
   border: 2px solid white;
   border-radius: 50%;
-  margin: 10px auto;
+  margin: 0;
   background-color: $red;
-
-  @media screen and (min-width: 600px) {
-    margin: 15px auto;
-  }
 }
 
 #change-color-list {
