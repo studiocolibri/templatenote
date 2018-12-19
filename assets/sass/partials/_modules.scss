@@ -175,7 +175,7 @@ button:focus {
   border: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   @media screen and (min-width: 600px) {
     width: 50px;
