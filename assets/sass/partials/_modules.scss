@@ -221,11 +221,12 @@ button:focus {
   display: block;
   position: relative;
   flex-grow: 0;
-  width: 10px !important;
-  height: 10px !important;
+  width: 20px;
+  height: 20px;
   border: 2px solid white;
   border-radius: 50%;
   margin: 0;
+  padding: 0;
   background-color: $red;
 }
 
