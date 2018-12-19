@@ -19,7 +19,7 @@ function closeGeneratedCanvas(){var generatedCanvas=document.getElementById('can
 function drawCloseGeneratedCanvasBtn(){var closeBtn=document.createElement("button");var closeBtnTxt=document.createTextNode("X");closeBtn.appendChild(closeBtnTxt);closeBtn.classList.add('button');closeBtn.id="canvas-close-btn";document.body.appendChild(closeBtn);closeBtn.addEventListener('click',closeGeneratedCanvas);}
 function takeScreenshot(){var saveBtn=document.getElementById("canvas-save-btn");canvasElement.removeChild(saveBtn);var w=window.innerWidth;var h=document.body.clientHeight;html2canvas(document.body,{width:w,height:h}).then(function(canvas){canvas.id="canvas-generated";document.body.appendChild(canvas);hideCanvas(canvasElement);replaceBtnImg();drawCloseGeneratedCanvasBtn();});}
 function toggleSaveBtn(){if(canvasElement.style.display!="none"){var saveBtn=document.createElement("button");var saveBtnTxt=document.createTextNode("Save");saveBtn.appendChild(saveBtnTxt);saveBtn.classList.add('button');saveBtn.id="canvas-save-btn";canvasElement.appendChild(saveBtn);saveBtn.addEventListener('click',takeScreenshot);}else{var saveBtn=document.getElementById("canvas-save-btn");canvasElement.removeChild(saveBtn);}}
-function drawCanvas(){windowSize();initCanvas();toggleCanvas();replaceBtnImg();setPickUpState();toggleSaveBtn();}
+function drawCanvas(){windowSize();initCanvas();toggleCanvas();replaceBtnImg();setPickUpState();if(document.body.classList.contains('playground')){toggleSaveBtn();}}
 getPickUpState();var canvasElement=document.getElementById("canvas-container");var canvasBtn=document.getElementById("canvas-button");canvasBtn.addEventListener('click',drawCanvas);/*!
 * html2canvas 1.0.0-alpha.12 <https://html2canvas.hertzen.com>
 * Copyright (c) 2018 Niklas von Hertzen <https://hertzen.com>
@@ -32,4 +32,4 @@ writeColor(currentColor);}
 function getColor(){setBtnColors();if(sessionStorage.color){currentColor=sessionStorage.getItem("color");}else{currentColor=document.getElementById("change-color-btn__current").dataset.color;sessionStorage.setItem("color",currentColor);}
 writeColor(currentColor);}
 function showColorList(){if(colorList.style.display==="none"){colorList.style.display="flex";changeColorBtn.classList.add('opened');setColor();}else{colorList.style.display="none";changeColorBtn.classList.remove('opened');}}
-changeColorBtn.addEventListener('click',showColorList);getColor();
+changeColorBtn.addEventListener('click',showColorList);getColor();var excessPaper=document.getElementById('excess-paper');var excessPaperText=document.getElementById('excess-paper-text');excessPaper.addEventListener('click',function(){excessPaperText.classList.toggle('visible');});

@@ -213,8 +213,10 @@ function drawCanvas() {
     initCanvas();
     toggleCanvas();
     replaceBtnImg();
-    setPickUpState();  
-    toggleSaveBtn();  
+    setPickUpState(); 
+    if (document.body.classList.contains('playground')) {
+        toggleSaveBtn();  
+    }
 }
 
 getPickUpState();

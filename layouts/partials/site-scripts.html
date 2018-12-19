@@ -3,7 +3,8 @@
 {{ $canvas := resources.Get "js/canvas.js" }}
 {{ $html2canvas := resources.Get "js/html2canvas.js" }}
 {{ $changeColor := resources.Get "js/changeColor.js" }}
-{{ $defaultJS := slice $menu $netlifyIdentity $canvas $html2canvas $changeColor | resources.Concat "js/global.js" }}
+{{ $excessPaper := resources.Get "js/excessPaper.js" }}
+{{ $defaultJS := slice $menu $netlifyIdentity $canvas $html2canvas $changeColor $excessPaper | resources.Concat "js/global.js" }}
 {{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint }}
 
 <script src="{{ $globalJS.Permalink }}"></script>
