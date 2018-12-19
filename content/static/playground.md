@@ -1,6 +1,6 @@
 ---
 title: "Playground"
-type: "static"
+type: "playground"
 url: "playground"
 class: "playground"
 ---

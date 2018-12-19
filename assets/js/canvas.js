@@ -179,12 +179,22 @@ function drawCloseGeneratedCanvasBtn() {
 }
 
 function takeScreenshot() {
-    var saveBtn = document.getElementById("canvas-save-btn");
+    var saveBtn = document.getElementById("canvas-save-btn"),
+        playgroundCanvas = document.getElementById("playground-canvas"),
+        playgroundCanvasW = playgroundCanvas.offsetWidth-40,
+        playgroundCanvasH = playgroundCanvas.offsetHeight-40,
+        playgroundCanvasX = playgroundCanvas.offsetLeft+20,
+        playgroundCanvasY = playgroundCanvas.offsetTop+20;
     canvasElement.removeChild(saveBtn);
     var w = window.innerWidth;
     var h = document.body.clientHeight;
 
-    html2canvas(document.body,{width:w, height:h}).then(function(canvas) {
+    html2canvas(document.body,{
+        width:playgroundCanvasW,
+        height:playgroundCanvasH,
+        x:playgroundCanvasX,
+        y:playgroundCanvasY
+    }).then(function(canvas) {
         canvas.id = "canvas-generated";
         document.body.appendChild(canvas);
         hideCanvas(canvasElement);
