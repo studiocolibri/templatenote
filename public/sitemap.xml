@@ -3,24 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://brave-ride-4d3713.netlify.com/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://brave-ride-4d3713.netlify.com/</loc>
   </url>
   
   <url>
     <loc>https://brave-ride-4d3713.netlify.com/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://brave-ride-4d3713.netlify.com/shop/carnetantho/</loc>
-  </url>
-  
-  <url>
-    <loc>https://brave-ride-4d3713.netlify.com/shop/carnet-test-cms-1/</loc>
   </url>
   
   <url>
@@ -33,15 +20,28 @@
   </url>
   
   <url>
-    <loc>https://brave-ride-4d3713.netlify.com/shop/carnet01/</loc>
+    <loc>https://brave-ride-4d3713.netlify.com/shop/2018-12-07-22-36_notepad-pink/</loc>
   </url>
   
   <url>
-    <loc>https://brave-ride-4d3713.netlify.com/shop/lien-vers-carnet-02/</loc>
+    <loc>https://brave-ride-4d3713.netlify.com/shop/2018-12-19-18-20_carnet-2/</loc>
+  </url>
+  
+  <url>
+    <loc>https://brave-ride-4d3713.netlify.com/partners/</loc>
+  </url>
+  
+  <url>
+    <loc>https://brave-ride-4d3713.netlify.com/playground/</loc>
+  </url>
+  
+  <url>
+    <loc>https://brave-ride-4d3713.netlify.com/process/</loc>
   </url>
   
   <url>
     <loc>https://brave-ride-4d3713.netlify.com/shop/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -51,21 +51,6 @@
   
   <url>
     <loc>https://brave-ride-4d3713.netlify.com/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://brave-ride-4d3713.netlify.com/tags/testtag/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://brave-ride-4d3713.netlify.com/tags/testtagthree/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://brave-ride-4d3713.netlify.com/tags/testtagtwo/</loc>
     <priority>0</priority>
   </url>
   

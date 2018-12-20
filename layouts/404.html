@@ -1,13 +1,10 @@
 {{ define "header" }}{{ partial "site-header.html" . }}{{ end }}
 {{ define "main" }}
-    <article class="page-wrapper">
-      <header class="page-header">
-        <div class="block-mw">
-          <h1 class="page-title">Oups, il y a une erreur, cette page n'existe pas.</h1>
-          <p class="page-description">
-            <a class="button" href="{{ .Site.BaseURL }}">Retour vers la page d'accueil</a>
-          </p>
-        </div>
-      </header>
-    </article>
+<article class="single block-mw rectangle-before">
+  <header class="page-header"><h1>Oops</h1></header>
+  <section class="page-wrapper">
+    <p>We can't seem to find the page you're looking for.</p>
+    <p><a class="button" href="{{ .Site.BaseURL }}">Go to homepage</a></p>
+  </section>
+</article>
 {{ end }}
