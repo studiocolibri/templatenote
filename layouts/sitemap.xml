@@ -5,22 +5,21 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  {{ range where .Data.Pages "Type" "in" .Site.Params.mainSections }}
   <url>
-    <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
-    <lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>{{ end }}{{ with .Sitemap.ChangeFreq }}
-    <changefreq>{{ . }}</changefreq>{{ end }}{{ if ge .Sitemap.Priority 0.0 }}
-    <priority>{{ .Sitemap.Priority }}</priority>{{ end }}{{ if .IsTranslated }}{{ range .Translations }}
-    <xhtml:link
-                rel="alternate"
-                hreflang="{{ .Lang }}"
-                href="{{ .Permalink }}"
-                />{{ end }}
-    <xhtml:link
-                rel="alternate"
-                hreflang="{{ .Lang }}"
-                href="{{ .Permalink }}"
-                />{{ end }}
+    <loc>https://brave-ride-4d3713.netlify.com/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  {{ end }}
+  
+  <url>
+    <loc>https://brave-ride-4d3713.netlify.com/partners/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://brave-ride-4d3713.netlify.com/process/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
