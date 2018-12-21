@@ -6,5 +6,11 @@ title = "Template Note"
 [params]
   author = "Studio Colibri"
   description = "We create unique Notebooks & Notepads using only excess paper"
+  mainSections = ["static", "process", "about", "home"]
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5

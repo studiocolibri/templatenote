@@ -1,71 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://brave-ride-4d3713.netlify.com/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
   <url>
     <loc>https://brave-ride-4d3713.netlify.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://brave-ride-4d3713.netlify.com/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://brave-ride-4d3713.netlify.com/shop/carnetantho/</loc>
-  </url>
-  
-  <url>
-    <loc>https://brave-ride-4d3713.netlify.com/shop/carnet-test-cms-1/</loc>
-  </url>
-  
-  <url>
-    <loc>https://brave-ride-4d3713.netlify.com/categories/</loc>
-    <priority>0</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://brave-ride-4d3713.netlify.com/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://brave-ride-4d3713.netlify.com/shop/carnet01/</loc>
+    <loc>https://brave-ride-4d3713.netlify.com/partners/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://brave-ride-4d3713.netlify.com/shop/lien-vers-carnet-02/</loc>
-  </url>
-  
-  <url>
-    <loc>https://brave-ride-4d3713.netlify.com/shop/</loc>
+    <loc>https://brave-ride-4d3713.netlify.com/process/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://brave-ride-4d3713.netlify.com/static/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://brave-ride-4d3713.netlify.com/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://brave-ride-4d3713.netlify.com/tags/testtag/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://brave-ride-4d3713.netlify.com/tags/testtagthree/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://brave-ride-4d3713.netlify.com/tags/testtagtwo/</loc>
+    <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
