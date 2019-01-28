@@ -1,0 +1,11 @@
+---
+cat: shopItem
+published: false
+title: Notepad - Pink Grid
+img: /27112018-27112018-capture0055.jpg
+info_01: 100 x 200 mm
+info_02: 60  detachable pages pages
+info_03: 'Riso printed '
+external_url: 'https://tictail.com/templatenote/riso-printed-notepad-pink-grid'
+---
+
