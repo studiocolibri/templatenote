@@ -1,6 +1,6 @@
 ---
 cat: shopItem
-published: false
+published: true
 title: Notepad - Pink Grid
 img: /template-notepad-pink-grid-front.jpg
 info_01: 100 x 200 mm
