@@ -1,6 +1,6 @@
 ---
 cat: shopItem
-published: false
+published: true
 title: Notepad - Pink Lines
 img: /template-notepad-pink-lines-front.jpg
 info_01: 100 x 200 mm
