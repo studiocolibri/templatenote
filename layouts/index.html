@@ -9,10 +9,10 @@
               <button class="button" id="excess-paper-close-btn">X</button>
               <strong>Excess paper:</strong> A lot of paper scraps are left lying around after printing jobs. These excesses are impractical for the printers use and most of it ends up being recycled. However, the best ecological solution is to reuse the paper as is.
           </span></a></p>
-		    <p><a href="/about" class="button">Find out more</a> <a target="_blank" href="https://tictail.com/templatenote" class="button">View products</a></p>
+		    <p><a href="/process" class="button">Find out more</a> <a target="_blank" href="https://tictail.com/templatenote" class="button">View products</a></p>
       </div>
       <div class="section-block section-block--no-margin-top">
-        <picture class="img-wrapper img-offset" onclick="">
+        <picture class="img-wrapper" onclick="">
             <source srcset="/assets/uploadsOut/Template-2018-08-29-Insta-7.jpg"
                     media="(min-width: 768px)">
             <img src="/assets/uploadsOutThumbs/Template-2018-08-29-Insta-7.jpg" alt="{{ .Site.Params.description }}" width="287" height="287" />
@@ -30,7 +30,7 @@
             <img src="/assets/uploadsOutThumbs{{ .Params.Img }}" alt="{{ .Title }}" width="287" height="287">
           </a>
           <h3 class="shoplist__item__title">
-            <a href="{{ .Permalink }}">
+            <a href="{{ .Params.external_url }}">
               {{ .Title }}
             </a>
           </h3>
