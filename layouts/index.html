@@ -19,18 +19,17 @@
         </picture>
       </div>
     </div>
-    
   </section>
   <section class="page-section block-mw rectangle-before">
     <h2>Our template notes</h2>
     <ul class="shoplist">
       {{ range where .Site.Pages "Params.cat" "shopItem" }}
         <li class="shoplist__item">
-          <a class="shoplist__item__img img-wrapper" href="{{ .Params.external_url }}">
+          <a target="_blank" class="shoplist__item__img img-wrapper" href="{{ .Params.external_url }}">
             <img src="/assets/uploadsOutThumbs{{ .Params.Img }}" alt="{{ .Title }}" width="287" height="287">
           </a>
           <h3 class="shoplist__item__title">
-            <a href="{{ .Params.external_url }}">
+            <a target="_blank" href="{{ .Params.external_url }}">
               {{ .Title }}
             </a>
           </h3>

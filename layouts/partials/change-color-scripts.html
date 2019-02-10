@@ -1,0 +1,61 @@
+<script>
+    var currentColor,
+    rootElement = document.getElementById("root"),
+    changeColorBtn = document.getElementById('change-color-btn'),
+    changeColorBtnCurrent = document.getElementById('change-color-btn__current'),
+    colorList = document.getElementById('change-color-list');
+    if (typeof(Storage) == "undefined") {
+        changeColorBtn.style.display = none;
+    }
+    function setBtnColors() {
+        allColorBtns = document.querySelectorAll('.change-color-list__item');
+        allColorBtns.forEach(function(el) {
+            var thisBtnColor = el.dataset.color;
+            var thisBtnColor = thisBtnColor.slice(1);
+            el.style.backgroundColor = '#'+thisBtnColor;
+            el.addEventListener('click', function() {
+                setColor(thisBtnColor);
+            });
+        });
+    }
+    function writeColor(color) {
+        thisColor = color;
+        document.documentElement.style.setProperty("--templateColor", '#'+thisColor);
+        document.body.style.background = '#F9F6EF repeat url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 66" width="42px" height="66px"><defs></defs><g style="fill:none;stroke:%23'+thisColor+';stroke-opacity:0.3"><rect style="stroke:none;" width="42" height="66"/><rect style="fill:none;" x="0.5" y="0.5" width="42" height="66"/></g></svg>\') top center';
+        changeColorBtn.style.backgroundColor = '#'+thisColor;
+        changeColorBtnCurrent.style.backgroundColor = '#'+thisColor;
+    }
+    function setColor(color) {
+        if (color) {
+            currentColor = color;
+            sessionStorage.setItem("color", currentColor);
+        } else {
+            currentColor = sessionStorage.getItem("color");
+        }
+        writeColor(currentColor);
+    }
+    function getColor() {
+        if (sessionStorage.color) {
+            currentColor = sessionStorage.getItem("color");
+            writeColor(currentColor);
+        } else {
+            currentColor = rootElement.style.getPropertyValue('--templateColor');
+            sessionStorage.setItem("color", currentColor);
+            writeColor(currentColor);
+        }
+        setBtnColors();
+    }
+    function showColorList() {
+        if (colorList.style.display === "none") {
+            colorList.style.display = "flex";
+            changeColorBtn.classList.add('opened');
+        } else {
+            colorList.style.display = "none";
+            changeColorBtn.classList.remove('opened');
+        }
+    }
+    changeColorBtn.addEventListener('click', function() {
+        showColorList();
+    });
+    getColor();
+</script>

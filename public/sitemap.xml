@@ -6,7 +6,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
   <url>
     <loc>https://brave-ride-4d3713.netlify.com/about/</loc>
     <changefreq>monthly</changefreq>
@@ -24,11 +23,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
-  
-  <url>
-    <loc>https://brave-ride-4d3713.netlify.com/static/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
 </urlset>

@@ -2,10 +2,9 @@
 {{ $netlifyIdentity := resources.Get "js/netlifyIdentity.js" }}
 {{ $canvas := resources.Get "js/canvas.js" }}
 {{ $html2canvas := resources.Get "js/html2canvas.js" }}
-{{ $changeColor := resources.Get "js/changeColor.js" }}
 {{ $excessPaper := resources.Get "js/excessPaper.js" }}
-{{ $defaultJS := slice $menu $netlifyIdentity $canvas $html2canvas $changeColor $excessPaper | resources.Concat "js/global.js" }}
+{{ $defaultJS := slice $menu $netlifyIdentity $canvas $html2canvas $excessPaper | resources.Concat "js/global.js" }}
 {{ $globalJS := $defaultJS | resources.Minify | resources.Fingerprint }}
-
 <script src="{{ $globalJS.Permalink }}"></script>
+{{ block "changeColorScript" . }}{{ partial "change-color-scripts.html" . }}{{ end }}
 

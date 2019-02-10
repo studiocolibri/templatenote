@@ -25,6 +25,23 @@ collections:
       - {label: "Info 03", name: "info_03", widget: "string", required: false}
       - {label: "Lien URL", name: "external_url", widget: "string"}
 
+  - name: "Colors" # Used in routes, e.g., /admin/collections/blog
+    label: "Colors" # Used in the UI
+    files:
+      - label: "Colors"
+        name: "colors"
+        file: "data/css.json"
+        fields:
+          - label: Colors
+            name: colors
+            widget: list
+            fields:
+              - label: Color
+                name: color
+                widget: object
+                fields:
+                  - {label: Value, name: value, widget: string}
+
   - label: "Pages"
     name: "pages"
     files:
