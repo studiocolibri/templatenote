@@ -24,7 +24,7 @@
     {
       "block": {
         "title": "You create",
-        "description": "Once it’s in your hands, you are free to use it however you like! \n\n**\\#TemplateNote**\n\n<a href=\"https://tictail.com/templatenote\" class=\"button\">Pickup a Template Note now</a>\n"
+        "description": "Once it’s in your hands, you are free to use it however you like! \n\n**\\#TemplateNote**\n\n<a target=\"_blank\" href=\"https://tictail.com/templatenote\" class=\"button\">Pickup a Template Note now</a>\n"
       }
     }
   ]
