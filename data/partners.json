@@ -1,0 +1,29 @@
+{
+  "thanks" : "Template Note would not exist without the generosity and the ecological awareness of our partners",
+  "partners": [
+    {
+      "partner": {
+        "title": "Chez Rosi",
+        "location": "Bruxelles",
+        "link": "https://chezrosi.wordpress.com",
+        "img": "/Template-2018-08-29-Insta-7.jpg"
+      }
+    },
+    {
+      "partner": {
+        "title": "Cultura",
+        "location": "Wetteren",
+        "link": "http://www.cultura.be/",
+        "img": "/Template-2018-08-29-Insta-7.jpg"
+      }
+    },
+    {
+      "partner": {
+        "title": "Cultura",
+        "location": "Wetteren",
+        "link": "http://www.cultura.be/",
+        "img": "/Template-2018-08-29-Insta-7.jpg"
+      }
+    }
+  ]
+}

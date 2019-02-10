@@ -58,4 +58,21 @@ collections:
                   - {label: Title, name: title, widget: string, required: false}
                   - {label: Description, name: description, widget: markdown, required: false}
                   - {label: Image, name: img, widget: image, required: false}
+      - label: "Partners Page"
+        name: "partners"
+        file: "data/partners.json"
+        fields:
+          - label: Partners
+            name: partners
+            widget: list
+            fields:
+              - {label: Thanks, name: thanks, widget: string}
+              - label: Partners
+                name: partner
+                widget: object
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Link, name: link, widget: string}
+                  - {label: Location, name: location, widget: string}
+                  - {label: Image, name: img, widget: image}
               
