@@ -62,11 +62,11 @@ collections:
         name: "partners"
         file: "data/partners.json"
         fields:
+          - {label: Thanks, name: thanks, widget: string}
           - label: Partners
             name: partners
             widget: list
             fields:
-              - {label: Thanks, name: thanks, widget: string}
               - label: Partners
                 name: partner
                 widget: object
