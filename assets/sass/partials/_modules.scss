@@ -259,13 +259,17 @@ button:focus {
 .button {
   display: inline-block;
   text-decoration: none;
-  padding: 0.9em;
+  padding: 1em;
   color: var(--templateColor);
   border: 2px solid var(--templateColor);
-  font-weight: bold;
+	@include f-ss;
+	text-transform:uppercase;
+	font-size: .8rem;
   line-height: 1;
   background-color: $white;
   transition: all 150ms ease-out;
+
+	
 
   &:hover,
   &:focus {

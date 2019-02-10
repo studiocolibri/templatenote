@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "autoprefixer": "^9.3.1",
+    "autoprefixer": "^9.4.4",
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^5.0.1",
     "imagemin-mozjpeg": "^7.0.0",
