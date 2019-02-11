@@ -1,4 +1,8 @@
-// windowSize, initCanvas
+var playgroundPage = false;
+
+if (document.body.classList.contains('playground')) {
+    playgroundPage = true;  
+}
 
 function windowSize() {
     var elmnt = document.body;
@@ -38,34 +42,7 @@ function initCanvas() {
     }, false);
 }
 
-function color(obj) {
-    switch (obj.id) {
-        case "green":
-            x = "green";
-            break;
-        case "blue":
-            x = "blue";
-            break;
-        case "red":
-            x = "red";
-            break;
-        case "yellow":
-            x = "yellow";
-            break;
-        case "orange":
-            x = "orange";
-            break;
-        case "black":
-            x = "black";
-            break;
-        case "white":
-            x = "white";
-            break;
-    }
-    if (x == "white") y = 14;
-    else y = 2;
 
-}
 
 function draw() {
     ctx.beginPath();
@@ -152,7 +129,6 @@ var pickUp = document.getElementById('pick-up'),
 
 function getPickUpState() {
     if (!sessionStorage.pickUp) {
-        console.log('pickup is not set');
         pickUp.classList.add('visible');
     }
 }
@@ -178,13 +154,14 @@ function drawCloseGeneratedCanvasBtn() {
     closeBtn.addEventListener('click', closeGeneratedCanvas);
 }
 
-function takeScreenshot() {
+/* function takeScreenshot() {
     var saveBtn = document.getElementById("canvas-save-btn"),
         playgroundCanvas = document.getElementById("playground-canvas"),
         playgroundCanvasW = playgroundCanvas.offsetWidth-40,
         playgroundCanvasH = playgroundCanvas.offsetHeight-40,
         playgroundCanvasX = playgroundCanvas.offsetLeft+20,
         playgroundCanvasY = playgroundCanvas.offsetTop+20;
+    playgroundCanvas.style.background = 'red';
     canvasElement.removeChild(saveBtn);
     var w = window.innerWidth;
     var h = document.body.clientHeight;
@@ -201,7 +178,7 @@ function takeScreenshot() {
         replaceBtnImg();
         drawCloseGeneratedCanvasBtn();
     });
-}
+} */
 
 function toggleSaveBtn() {
     if (canvasElement.style.display != "none") {
@@ -218,13 +195,23 @@ function toggleSaveBtn() {
     }
 }
 
+function setText() {
+    if (playgroundPage) {
+        var playgroundHeader = document.getElementById('playground-header');
+        var playgroundFooter = document.getElementById('playground-footer');
+        playgroundHeader.style.display = 'none';
+        playgroundFooter.style.display = 'block';
+    }
+}
+
 function drawCanvas() {
     windowSize();
     initCanvas();
     toggleCanvas();
     replaceBtnImg();
     setPickUpState(); 
-    if (document.body.classList.contains('playground')) {
+    setText();
+    if (playgroundPage) {
         toggleSaveBtn();  
     }
 }

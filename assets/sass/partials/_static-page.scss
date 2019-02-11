@@ -108,13 +108,7 @@ body.static {
     }
 }
 
-body.playground {
-
-    article.single {
-        background: transparent;
-
-        &:before {
-            background: transparent;
-        }
-    }
+#playground-footer {
+    display: none;
+    margin-top:100%;
 }
