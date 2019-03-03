@@ -20,7 +20,7 @@ gulp.task('images', () =>
             imagemin.gifsicle({interlaced: true}),
             imagemin.jpegtran({progressive: true}),
             imageminMozjpeg({
-                quality: 60
+                quality: 70
             }),
             imagemin.optipng({optimizationLevel: 5}),
             imagemin.svgo({
