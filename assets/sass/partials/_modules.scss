@@ -372,10 +372,6 @@ button:focus {
     left: 0;
     transform: rotate(2deg);
 
-    @media (min-width: 400px) {
-      transform: rotate(3deg);
-    }
-
     @media (min-width: 768px) {
       border: 2px solid var(--templateColor);
     }
