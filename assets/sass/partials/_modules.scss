@@ -370,10 +370,10 @@ button:focus {
     right: 0;
     bottom: 0;
     left: 0;
-    transform: translate(-#{$su/2}, -#{$su/2});
+    transform: rotate(2deg);
 
     @media (min-width: 400px) {
-      transform: translate(-#{$su}, -#{$su});
+      transform: rotate(3deg);
     }
 
     @media (min-width: 768px) {
